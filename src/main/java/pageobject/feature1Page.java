@@ -27,6 +27,8 @@ public static By input81 = By.xpath("(//input[contains(@class,'c-form-group__tex
 
 public static By input90 = By.xpath("(//input[contains(@class,'u-btn u-btn--primary u-btn--block qa-continue-button')])[1]");
 
+public static By input100 = By.xpath("(//input[contains(@class,'c-form-group__text-input c-form-group__text-input--pronounced c-form-group__text-input--username username qa-username-input')])[1]");
+
 //<XPATHS>
 
 /*Page Constructor*/
