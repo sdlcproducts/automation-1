@@ -9,12 +9,19 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.But;
+import cucumber.api.java.en.And;
 import framework.AADriver;
 import framework.WebDriverFactory;
+import pageobject.LandingPage;
 
 import static org.junit.Assert.assertTrue;
 import java.util.Properties;
 
+import org.junit.*;
+
+import org.apache.commons.lang.RandomStringUtils;
 import pageobject.feature1Page;
 
 //<IMPORTS>
@@ -81,6 +88,15 @@ public void method3(String param31) throws Throwable {
 //button1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickButton(param31);
+//<CODE>
+}
+
+ @Then("^user writes into \"([^\"]*)\" textbox$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//text1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.writeText(RandomStringUtils.randomAlphanumeric(20), param41);
 //<CODE>
 }
 
