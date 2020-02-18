@@ -1,4 +1,4 @@
-@Wow
+@Smoke
  Feature: This setups the automation project
  
  Background:
