@@ -20,7 +20,7 @@ import framework.WebDriverFactory;
 @CucumberOptions(
 		features = {"src/test/features"},
 		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
-		tags={"@Great"},
+		tags={"@Smoke"},
 		glue={"glue"}
 )
 
