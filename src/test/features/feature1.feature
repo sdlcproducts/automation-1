@@ -7,4 +7,4 @@
  Scenario: Type in page
  	Then user types "XYZ" into "input81" textbox
          Then user clicks "input90" button
-         Then user writes into "input100" textbox
+         Then user types "LMNOP" into "input101" textbox
