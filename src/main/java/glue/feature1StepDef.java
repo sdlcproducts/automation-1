@@ -1,6 +1,5 @@
 package glue;
 
-import cucumber.api.PendingException;
 import framework.Settings;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -73,38 +72,16 @@ this.portal = param11.toUpperCase();
 //<CODE>
 }
 
- @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
-public void method2(String param21, String param22) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//text2
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.writeText(param21, param22);
-
-//<CODE>
-}
-
- @Then("^user clicks \"([^\"]*)\" button$")
-public void method3(String param31) throws Throwable {
+ @Given("^user clicks \"([^\"]*)\" button$")
+public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //button1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param31);
+feature1Page.clickButton(param21);
 //<CODE>
 }
 
-	@Then("^user unclicks \"([^\"]*)\" checkbox$")
-	public void userUnclicksCheckbox(String arg0) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
-	}
-
-	@Then("^user clicks \"([^\"]*)\" checkbox$")
-	public void userClicksCheckbox(String arg0) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
-	}
-
-	//<METHOD>
+ //<METHOD>
 
 
 }
