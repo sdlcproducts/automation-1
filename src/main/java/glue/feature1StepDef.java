@@ -1,5 +1,6 @@
 package glue;
 
+import cucumber.api.PendingException;
 import framework.Settings;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -91,7 +92,19 @@ feature1Page.clickButton(param31);
 //<CODE>
 }
 
- //<METHOD>
+	@Then("^user unclicks \"([^\"]*)\" checkbox$")
+	public void userUnclicksCheckbox(String arg0) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@Then("^user clicks \"([^\"]*)\" checkbox$")
+	public void userClicksCheckbox(String arg0) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	//<METHOD>
 
 
 }
