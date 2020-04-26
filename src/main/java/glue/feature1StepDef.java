@@ -81,6 +81,15 @@ feature1Page.clickButton(param21);
 //<CODE>
 }
 
+ @Then("^user types into \"([^\"]*)\" textbox$")
+public void method3(String param31) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//text1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.writeText(RandomStringUtils.randomAlphanumeric(20), param31);
+//<CODE>
+}
+
  //<METHOD>
 
 
