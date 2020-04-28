@@ -72,21 +72,21 @@ this.portal = param11.toUpperCase();
 //<CODE>
 }
 
- @Then("^user types into \"([^\"]*)\" textbox$")
+ @Given("^user clicks \"([^\"]*)\" button$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//text1
+//button1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.writeText(RandomStringUtils.randomAlphanumeric(20), param21);
+feature1Page.clickButton(param21);
 //<CODE>
 }
 
- @Then("^user enter \"([^\"]*)\" into \"([^\"]*)\" textbox$")
-public void method3(String param31, String param32) throws Throwable {
+ @Then("^user types into \"([^\"]*)\" textbox$")
+public void method3(String param31) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//text2
+//text1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.writeText(param31, param32);
+feature1Page.writeText(RandomStringUtils.randomAlphanumeric(20), param31);
 //<CODE>
 }
 
