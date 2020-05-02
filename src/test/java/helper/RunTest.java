@@ -25,7 +25,7 @@ import framework.WebDriverFactory;
 )
 
 @RunWith(Cucumber.class)
-public class Runner {
+public class RunTest {
 	private static WebDriverFactory driverFactory;
 	
 	public static String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
