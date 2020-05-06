@@ -16,6 +16,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import framework.AADriver;
 import framework.WebDriverFactory;
+import org.openqa.selenium.WebDriver;
 
 @CucumberOptions(
 		features = {"src/test/features"},
@@ -45,6 +46,9 @@ public class RunTest {
 	public static void close(){
 		try {
 			AADriver driver = new AADriver(driverFactory.getDriver());
+			WebDriver webDriver = driverFactory.getDriver();
+			webDriver.close();
+			webDriver.quit();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
