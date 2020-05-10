@@ -10,3 +10,5 @@
    Then user types "LMNOP" into "input101" textbox
    Then user clicks "xyz" checkbox
    Then user unclicks "xyz" checkbox
+   Then user sees "submit" button
+

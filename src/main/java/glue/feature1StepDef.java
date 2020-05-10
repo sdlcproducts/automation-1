@@ -57,8 +57,8 @@ e.printStackTrace();
 }
 }
 Thread.sleep(10000);
-driver.close();
-driver.quit();
+//driver.close();
+//driver.quit();
 }
 
 
@@ -101,6 +101,14 @@ feature1Page.clickButton(param31);
 	@Then("^user clicks \"([^\"]*)\" checkbox$")
 	public void userClicksCheckbox(String arg0) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
+		throw new PendingException();
+	}
+
+	@Then("^user sees \"([^\"]*)\" button$")
+	public void userSeesButton(String arg0) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		feature1Page feature1Page = new feature1Page(driver);
+		feature1Page.elementExists(arg0);
 		throw new PendingException();
 	}
 

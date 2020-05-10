@@ -966,7 +966,7 @@ package framework;
 	     */
 	    public void selectDropdownOnPage(String selection, String dropdown, String pageName) throws Exception {
 	        try{
-	            Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
+	            Class<?> clazz = Class.forName("pageobject."+pageName);
 	            Object obj = clazz.newInstance();
 	            Field field = obj.getClass().getField(dropdown);
 	            Select dropdwn=new Select(driver.findElement((By) field.get(obj)));
