@@ -31,7 +31,7 @@ public static By link80 = By.xpath("(//div[@data-id='paypal'])[2]");
 
 public static By link100 = By.xpath("(//li[@class='-pointer'])[2]");
 
-public static By link111 = By.xpath("(//li[@class='-pointer'])[2]");
+public static By text31 = By.xpath("//input");
 
 //<XPATHS>
 
