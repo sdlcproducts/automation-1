@@ -1,14 +1,11 @@
-@Smoke
- Feature: This setups the automation project
- 
+@Demo
+ Feature: Scequoia Homepage
  Background:
- 	Given user opens "Allegis" portal on "TEST" environment
-
- Scenario: Type in page
-   Then user types "XYZ" into "input81" textbox
-   Then user clicks "input90" button
-   Then user types "LMNOP" into "input101" textbox
-   Then user clicks "xyz" checkbox
-   Then user unclicks "xyz" checkbox
-   Then user sees "submit" button
-
+ Given user navigates to "https://www.sequoiacap.com/"
+ Scenario: Find Company
+ When user clicks "link60" button
+ Then user sees "link70" element
+ Then user clicks "link80" link
+ Scenario: User searches website
+ When user clicks "Search" link
+ Then user types in "Wow" in "Search" textbox
