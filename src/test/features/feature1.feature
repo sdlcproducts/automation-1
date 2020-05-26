@@ -7,5 +7,5 @@
  Then user sees "link70" element
  Then user clicks "link80" link
  Scenario: User searches website
- When user clicks "Search" link
- Then user types in "Wow" in "Search" textbox
+ When user clicks "link100" link
+ Then user types in "Wow" in "link111" textbox
