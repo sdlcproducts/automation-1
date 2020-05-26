@@ -51,6 +51,9 @@ package framework;
 
 	        try{
 	            Thread.sleep(2000);
+							JavascriptExecutor je = (JavascriptExecutor) driver;
+							WebElement element = driver.findElement(ObjectName);
+							je.executeScript("arguments[0].scrollIntoView(true);", element);
 	            object= wait.until(ExpectedConditions.visibilityOfElementLocated(ObjectName));
 	            if (driver.findElements(ObjectName).size() > 0){return true;}
 	            else {return false;}
