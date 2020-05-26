@@ -1,6 +1,5 @@
 package glue;
 
-import cucumber.api.PendingException;
 import framework.Settings;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,6 +19,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.Properties;
 
 import org.junit.*;
+
+import pageobject.feature1Page;
 
 import org.apache.commons.lang.RandomStringUtils;
 import pageobject.feature1Page;
@@ -56,63 +57,57 @@ e.printStackTrace();
 
 }
 }
+//Slow down the script
 Thread.sleep(10000);
-//driver.close();
-//driver.quit();
+
 }
 
 
-@Given("^user opens \"([^\"]*)\" portal on \"([^\"]*)\" environment$")
-public void method1(String param11, String param12) throws Throwable {
+@Given("^user navigates to \"([^\"]*)\"$")
+public void method1(String param11) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//navigation1
-this.portal = param11.toUpperCase();
-		this.environment = param12.toUpperCase();
-		String url = properties.getProperty(environment+"_"+portal+"_URL");
-		driver.get(url);
+//navigation2
+driver.get(param11);
 //<CODE>
 }
 
- @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
-public void method2(String param21, String param22) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//text2
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.writeText(param21, param22);
-
-//<CODE>
-}
-
- @Then("^user clicks \"([^\"]*)\" button$")
-public void method3(String param31) throws Throwable {
+ @When("^user clicks \"([^\"]*)\" button$")
+public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //button1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param31);
+feature1Page.clickButton(param21);
 //<CODE>
 }
 
-	@Then("^user unclicks \"([^\"]*)\" checkbox$")
-	public void userUnclicksCheckbox(String arg0) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
-	}
+ @Then("^user sees \"([^\"]*)\" element$")
+public void method3(String param31) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//exists1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.elementExists(param31);
+//<CODE>
+}
 
-	@Then("^user clicks \"([^\"]*)\" checkbox$")
-	public void userClicksCheckbox(String arg0) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		throw new PendingException();
-	}
+ @Then("^user clicks \"([^\"]*)\" link$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//link1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param41);
+//<CODE>
+}
 
-	@Then("^user sees \"([^\"]*)\" button$")
-	public void userSeesButton(String arg0) throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
-		feature1Page feature1Page = new feature1Page(driver);
-		feature1Page.elementExists(arg0);
-		throw new PendingException();
-	}
+ @Then("^user types in \"([^\"]*)\" in \"([^\"]*)\" textbox$")
+public void method6(String param61, String param62) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//text2
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.writeText(param61, param62);
+//<CODE>
+}
 
-	//<METHOD>
+ //<METHOD>
 
 
 }
