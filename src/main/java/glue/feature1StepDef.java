@@ -99,6 +99,33 @@ feature1Page.writeText(param61, param62);
 //<CODE>
 }
 
+ @When("^userss clicks \"([^\"]*)\" link$")
+public void method7(String param71) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//link1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param71);
+//<CODE>
+}
+
+ @Then("^users clicks \"([^\"]*)\" link$")
+public void method8(String param81) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//link1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param81);
+//<CODE>
+}
+
+ @Then("^user clickss on \"([^\"]*)\" link$")
+public void method9(String param91) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//null
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param91);
+//<CODE>
+}
+
  //<METHOD>
 
 
