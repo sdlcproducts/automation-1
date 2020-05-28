@@ -11,5 +11,6 @@
  Then user types in "Wow" in "text111" textbox
  Scenario: Navigate to people page
  When userss clicks "link130" link
- Then users clicks "link140" link
- Then user clickss on "link150" link
+ Then user clicks "link140" link
+ Then user scrolls down to "link150" element
+ Then user clicks on "link160" link
