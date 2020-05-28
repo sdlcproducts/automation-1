@@ -9,3 +9,7 @@
  Scenario: User searches website
  When user clicks "link100" link
  Then user types in "Wow" in "text111" textbox
+ Scenario: Navigate to people page
+ When userss clicks "link130" link
+ Then users clicks "link140" link
+ Then user clickss on "link150" link
