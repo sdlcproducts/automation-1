@@ -71,23 +71,31 @@ driver.get(param11);
 //<CODE>
 }
 
- @When("^user clicks \"([^\"]*)\" link$")
+ @When("^user clicks \"([^\"]*)\" button$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//link1
+//button1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param21);
+feature1Page.clickButton(param21);
 
 //<CODE>
 }
 
- @Then("^user scrolls to \"([^\"]*)\" element$")
+ @Then("^user sees \"([^\"]*)\" element$")
 public void method3(String param31) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-////link1
-
+//exists1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param31);
+feature1Page.elementExists(param31);
+//<CODE>
+}
+
+ @Then("^user clicks \"([^\"]*)\" link$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//link1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param41);
 //<CODE>
 }
 
@@ -97,33 +105,6 @@ public void method6(String param61, String param62) throws Throwable {
 //text2
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.writeText(param61, param62);
-//<CODE>
-}
-
- @When("^userss clicks \"([^\"]*)\" link$")
-public void method7(String param71) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//link1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param71);
-//<CODE>
-}
-
- @Then("^users clicks \"([^\"]*)\" link$")
-public void method8(String param81) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//link1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param81);
-//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" link$")
-public void method9(String param91) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//link1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param91);
 //<CODE>
 }
 
