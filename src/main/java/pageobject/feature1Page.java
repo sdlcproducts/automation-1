@@ -25,21 +25,13 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By link60 = By.xpath("(//a[contains(.,'Companies')])[2]");
 
-public static By link70 = By.xpath("(//li[@class='-pointer'])[2]");
+public static By link70 = By.xpath("(//div[.='PayPal'])[2]");
 
 public static By link80 = By.xpath("(//div[.='PayPal'])[2]");
 
 public static By link100 = By.xpath("(//li[@class='-pointer'])[2]");
 
 public static By text111 = By.xpath("//input");
-
-public static By link130 = By.xpath("(//a[contains(.,'People')])[2]");
-
-public static By link140 = By.xpath("(//a[contains(.,'Specialists')])[1]");
-
-public static By link150 = By.xpath("(//a[@href='/people/jess-lee/']//div)[1]");
-
-public static By link160 = By.xpath("(//a[@href='/people/jess-lee/']//div)[1]");
 
 //<XPATHS>
 
@@ -69,21 +61,6 @@ public WebElement clickLink(String objectName) throws Exception {
         }
         return element;
     }
-
- public boolean elementExists(String objectName) throws Exception {
-    //Element exists
-    Field field = null;
-    By by= null;
-    boolean status;
-    try {
-      field = this.getClass().getField(objectName);
-      by = (By) field.get(this);
-      status = myDriver.verifyObjectPresent(by);
-    }catch (Exception e){
-      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-    }
-    return status;
-  }
 
 public void writeText(String text, String objectName) throws Exception {
         //Write Text
