@@ -37,9 +37,9 @@ public static By link130 = By.xpath("(//a[contains(.,'People')])[2]");
 
 public static By link140 = By.xpath("(//a[contains(.,'Specialists')])[1]");
 
-public static By link150 = By.xpath("(//a[@href="/people/jess-lee/"]//div)[1]");
+public static By link150 = By.xpath("(//a[@href='/people/jess-lee/']//div)[1]");
 
-public static By link160 = By.xpath("(//a[@href="/people/jess-lee/"]//div)[1]");
+public static By link160 = By.xpath("(//a[@href='/people/jess-lee/']//div)[1]");
 
 //<XPATHS>
 
