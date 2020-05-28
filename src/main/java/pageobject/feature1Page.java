@@ -25,7 +25,7 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By link60 = By.xpath("(//a[contains(.,'Companies')])[2]");
 
-public static By link70 = By.xpath("(//div[.='PayPal'])[2]");
+public static By link70 = By.xpath("(//li[@class='-pointer'])[2]");
 
 public static By link80 = By.xpath("(//div[.='PayPal'])[2]");
 
