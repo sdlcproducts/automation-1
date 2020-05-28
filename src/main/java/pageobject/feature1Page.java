@@ -33,6 +33,12 @@ public static By link100 = By.xpath("(//li[@class='-pointer'])[2]");
 
 public static By text111 = By.xpath("//input");
 
+public static By link130 = By.xpath("(//a[contains(.,'People')])[2]");
+
+public static By link140 = By.xpath("(//a[contains(.,'Specialists')])[1]");
+
+public static By link150 = By.xpath("//div[.='Jess Lee']/..//button/span");
+
 //<XPATHS>
 
 /*Page Constructor*/
