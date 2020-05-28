@@ -29,15 +29,9 @@ public static By link70 = By.xpath("(//div[.='PayPal'])[2]");
 
 public static By link80 = By.xpath("(//div[.='PayPal'])[2]");
 
-public static By link100 = By.xpath("(//li[@class='-pointer'])[2]");
+public static By button100 = By.xpath("(//li[@class='-pointer'])[2]");
 
 public static By text111 = By.xpath("//input");
-
-public static By link130 = By.xpath("(//a[contains(.,'People')])[2]");
-
-public static By link140 = By.xpath("(//a[contains(.,'Specialists')])[1]");
-
-public static By link150 = By.xpath("(//a[@href='/people/jess-lee/']//div)[1]");
 
 //<XPATHS>
 
@@ -51,6 +45,37 @@ public feature1Page(WebDriver driver){
 this.driver= driver;
 myDriver = new AADriver(this.driver);
 }
+
+public WebElement clickButton(String objectName) throws Exception {
+        //Write Text
+       Field field = null;
+        By by= null;
+        WebElement element=null;
+        try {
+            field = this.getClass().getField(objectName);
+            by = (By) field.get(this);
+            element = driver.findElement(by);
+            element.click();
+        }catch (Exception e){
+            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+        }
+        return element;
+    }
+
+ public boolean elementExists(String objectName) throws Exception {
+    //Element exists
+    Field field = null;
+    By by= null;
+    boolean status;
+    try {
+      field = this.getClass().getField(objectName);
+      by = (By) field.get(this);
+      status = myDriver.verifyObjectPresent(by);
+    }catch (Exception e){
+      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+    }
+    return status;
+  }
 
 public WebElement clickLink(String objectName) throws Exception {
         //Click Link
