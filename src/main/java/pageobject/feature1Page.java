@@ -39,6 +39,8 @@ public static By link140 = By.xpath("(//a[contains(.,'Specialists')])[1]");
 
 public static By link150 = By.xpath("//div[.='Jess Lee']/..//button/span");
 
+public static By link160 = By.xpath("//div[.='Jess Lee']/..//button/span");
+
 //<XPATHS>
 
 /*Page Constructor*/
