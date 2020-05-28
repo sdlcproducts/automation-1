@@ -108,21 +108,21 @@ feature1Page.clickLink(param71);
 //<CODE>
 }
 
- @Then("^users clicks \"([^\"]*)\" link$")
-public void method8(String param81) throws Throwable {
+ @Then("^user scrolls down to \"([^\"]*)\" element$")
+public void method9(String param91) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //link1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param81);
+feature1Page.clickLink(param91);
 //<CODE>
 }
 
- @Then("^user clickss on \"([^\"]*)\" link$")
-public void method9(String param91) throws Throwable {
+ @Then("^user clicks on \"([^\"]*)\" link$")
+public void method10(String param101) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//null
+//link1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param91);
+feature1Page.clickLink(param101);
 //<CODE>
 }
 
