@@ -25,6 +25,10 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By link60 = By.xpath("//a[.='Portfolio']");
 
+public static By link70 = By.xpath("//li[@id='Bitmain']");
+
+public static By link80 = By.xpath("//li[@id='Bitmain']");
+
 //<XPATHS>
 
 /*Page Constructor*/
