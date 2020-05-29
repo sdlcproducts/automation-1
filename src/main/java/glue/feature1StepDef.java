@@ -80,10 +80,9 @@ feature1Page.clickLink(param21);
  @Then("^user scrolls to \"([^\"]*)\" element$")
 public void method3(String param31) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-////link1
-
+//exists1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param31);
+feature1Page.elementExists(param31);
 //<CODE>
 }
 
