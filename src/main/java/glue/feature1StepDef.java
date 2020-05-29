@@ -77,21 +77,41 @@ feature1Page.elementExists(param21);
 //<CODE>
 }
 
- @Then("^user clicks \"([^\"]*)\" link$")
+ @Then("^scrolls to \"([^\"]*)\" link$")
 public void method3(String param31) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//link1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param31);
-//<CODE>
-}
-
- @Then("^user scrolls to \"([^\"]*)\" link$")
-public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //null
 feature1Page feature1Page = new feature1Page(driver);
+feature1Page.elementExists(param31);
+//<CODE>
+}
+
+ @Then("^user clicks \"([^\"]*)\" link$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//link1
+feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickLink(param41);
+
+
+//<CODE>
+}
+
+ @Then("^user clicks \"([^\"]*)\" element$")
+public void method5(String param51) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//null
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param51);
+//<CODE>
+}
+
+ @Then("^scrolls to \"([^\"]*)\" element$")
+public void method7(String param71) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//exists1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.elementExists(param71);
 //<CODE>
 }
 
