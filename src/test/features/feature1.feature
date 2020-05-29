@@ -1,11 +1,6 @@
 @Demo
- Feature: Scequoia Homepage
+ Feature: Lightspeed Website Navigation
  Background:
- Given user navigates to "https://www.sequoiacap.com/"
- Scenario: Find Company
- When user clicks "link60" button
- Then user sees "link70" element
- Then user clicks "link80" link
- Scenario: User searches website
- When user clicks "button100" button
- Then user types in "Wow" in "text111" textbox
+ Scenario: User searches for Portfolio
+ Given user navigatess to "https://lsvp.com/"
+ When user clicks "link60" Link
