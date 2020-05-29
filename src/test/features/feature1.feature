@@ -1,8 +1,13 @@
 @Demo
  Feature: Felicis Website Navigation
  Background:
- Scenario: Navigate to Portfolios
  Given user navigates to "https://www.felicis.com/"
+ Scenario: Navigate to About page
  Then user sees "link60" element
- Then user clicks "link70" link
- Then user scrolls to "link80" link
+ Then scrolls to "link70" link
+ Then user clicks "link80" link
+ Then user clicks "link90" element
+ Scenario: User searches for Portfolio
+ Then user clicks "link110" link
+ Then scrolls to "link120" element
+ Then user clicks "link130" link
