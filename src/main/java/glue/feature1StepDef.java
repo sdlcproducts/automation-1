@@ -92,6 +92,16 @@ public void method4(String param41) throws Throwable {
 //link1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickLink(param41);
+
+//<CODE>
+}
+
+ @Then("^user sees \"([^\"]*)\" element$")
+public void method6(String param61) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//exists1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.elementExists(param61);
 //<CODE>
 }
 
