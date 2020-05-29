@@ -60,9 +60,11 @@ Thread.sleep(10000);
 }
 
 
-@Given("^user navigatess to \"([^\"]*)\"$")
+@Given("^user navigates to \"([^\"]*)\"$")
 public void method1(String param11) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
+//navigation2
+driver.get(param11);
 //<CODE>
 }
 
