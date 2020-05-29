@@ -31,7 +31,7 @@ public static By link80 = By.xpath("//li[@id='Bitmain']/a");
 
 public static By link100 = By.xpath("//a[.='News']");
 
-public static By text110 = By.xpath("//h3[.='The Midas List The World’s Best Venture Capital Investors In 2020']/../..");
+public static By text110 = By.xpath("//h3[.='The Midas List The World’s Best Venture Capital Investors In 2020']/.././");
 
 public static By link120 = By.xpath("//h3[.='The Midas List The World’s Best Venture Capital Investors In 2020']/../..//a");
 
