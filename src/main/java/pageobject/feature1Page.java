@@ -35,6 +35,8 @@ public static By text110 = By.xpath("//h3[contains(.,'The Midas List')]");
 
 public static By link120 = By.xpath("//h3[.='The Midas List The World’s Best Venture Capital Investors In 2020']/../..//a");
 
+public static By link130 = By.xpath("//h3[.='The Midas List The World’s Best Venture Capital Investors In 2020']/../..//a");
+
 //<XPATHS>
 
 /*Page Constructor*/
