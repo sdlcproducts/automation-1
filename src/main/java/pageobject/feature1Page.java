@@ -25,9 +25,17 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By link60 = By.xpath("(//a[contains(.,'Felicis Ventures')])[1]");
 
-public static By link70 = By.xpath("(//a[contains(.,'Portfolio')])[2]");
+public static By link70 = By.xpath("(//a[contains(.,'About')])[2]");
 
-public static By link80 = By.xpath("(//a[contains(.,'Connected Devices')])[1]");
+public static By link80 = By.xpath("(//a[contains(.,'About')])[2]");
+
+public static By link90 = By.xpath("//a[contains(.,'Frequently ')]");
+
+public static By link110 = By.xpath("(//a[contains(.,'Portfolio')])[2]");
+
+public static By link120 = By.xpath("//a[@href="https://roadmunk.com/"]");
+
+public static By link130 = By.xpath("//a[@href="https://roadmunk.com/"]");
 
 //<XPATHS>
 
