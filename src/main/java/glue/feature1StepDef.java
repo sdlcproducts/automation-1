@@ -68,7 +68,7 @@ driver.get(param11);
 //<CODE>
 }
 
- @Thenn("^user clicks the  \"([^\"]*)\" button$")
+ @Thenn("^user clicks the \"([^\"]*)\" button$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //button1
