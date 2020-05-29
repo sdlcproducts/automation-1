@@ -83,6 +83,7 @@ public void method3(String param31) throws Throwable {
 //exists1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.elementExists(param31);
+
 //<CODE>
 }
 
