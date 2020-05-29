@@ -33,9 +33,9 @@ public static By link90 = By.xpath("//a[contains(.,'Frequently ')]");
 
 public static By link110 = By.xpath("(//a[contains(.,'Portfolio')])[2]");
 
-public static By link120 = By.xpath("//a[@href="https://roadmunk.com/"]");
+public static By link120 = By.xpath("//a[@href='https://roadmunk.com/']");
 
-public static By link130 = By.xpath("//a[@href="https://roadmunk.com/"]");
+public static By link130 = By.xpath("//a[@href='https://roadmunk.com/']");
 
 //<XPATHS>
 
