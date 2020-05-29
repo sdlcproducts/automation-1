@@ -9,4 +9,5 @@
  Scenario: User finds new article
  When user clicks "link100" link
  Then user sees "text110" element
- Then user clicks "link120" link
+ Then user scrolls to "link120" element
+ Then user clicks "link130" link
