@@ -27,15 +27,17 @@ public static By button60 = By.xpath("//button[@class='navbar-toggler hamburger 
 
 public static By link70 = By.xpath("//a[.='About']/..");
 
-public static By text80 = By.xpath("//strong[.='ABOUT KLEINER PERKINS']");
+public static By link80 = By.xpath("//a[.='About']/..");
 
-public static By button100 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
+public static By text90 = By.xpath("//strong[.='ABOUT KLEINER PERKINS']");
 
-public static By link110 = By.xpath("//a[.='Kleiner Perkins Fellows']");
+public static By button110 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
 
 public static By link120 = By.xpath("//a[.='Kleiner Perkins Fellows']");
 
-public static By text130 = By.xpath("//h2[.='Work with one of our Company partners']");
+public static By link130 = By.xpath("//a[.='Kleiner Perkins Fellows']");
+
+public static By text140 = By.xpath("//h2[.='Work with one of our Company partners']");
 
 //<XPATHS>
 
@@ -66,6 +68,21 @@ public WebElement clickButton(String objectName) throws Exception {
         return element;
     }
 
+ public boolean elementExists(String objectName) throws Exception {
+    //Element exists
+    Field field = null;
+    By by= null;
+    boolean status;
+    try {
+      field = this.getClass().getField(objectName);
+      by = (By) field.get(this);
+      status = myDriver.verifyObjectPresent(by);
+    }catch (Exception e){
+      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+    }
+    return status;
+  }
+
 public WebElement clickLink(String objectName) throws Exception {
         //Click Link
        Field field = null;
@@ -81,21 +98,6 @@ public WebElement clickLink(String objectName) throws Exception {
         }
         return element;
     }
-
- public boolean elementExists(String objectName) throws Exception {
-    //Element exists
-    Field field = null;
-    By by= null;
-    boolean status;
-    try {
-      field = this.getClass().getField(objectName);
-      by = (By) field.get(this);
-      status = myDriver.verifyObjectPresent(by);
-    }catch (Exception e){
-      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-    }
-    return status;
-  }
 
 //<METHOD>
 }
