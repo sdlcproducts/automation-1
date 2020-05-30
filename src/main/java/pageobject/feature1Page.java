@@ -33,7 +33,9 @@ public static By button100 = By.xpath("//button[@class='navbar-toggler hamburger
 
 public static By link110 = By.xpath("//a[.='Kleiner Perkins Fellows']");
 
-public static By text120 = By.xpath("//h2[.='Work with one of our Company partners']");
+public static By link120 = By.xpath("//a[.='Kleiner Perkins Fellows']");
+
+public static By text130 = By.xpath("//h2[.='Work with one of our Company partners']");
 
 //<XPATHS>
 
