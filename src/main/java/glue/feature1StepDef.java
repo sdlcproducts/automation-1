@@ -68,42 +68,52 @@ driver.get(param11);
 //<CODE>
 }
 
- @When("^user clicks the \"([^\"]*)\" button$")
+ @When("^sees the \"([^\"]*)\" element$")
 public void method2(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//exists1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.elementExists(param21);
+
+//<CODE>
+}
+
+ @Then("^user clicks the \"([^\"]*)\" button$")
+public void method3(String param31) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //button1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param21);
+feature1Page.clickButton(param31);
 
 //<CODE>
 }
 
  @Then("^sees \"([^\"]*)\" element$")
-public void method3(String param31) throws Throwable {
+public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //exists1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.elementExists(param31);
+feature1Page.elementExists(param41);
 
 //<CODE>
 }
 
  @And("^clicks \"([^\"]*)\" link$")
-public void method4(String param41) throws Throwable {
+public void method5(String param51) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //link1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param41);
+feature1Page.clickLink(param51);
 
 //<CODE>
 }
 
  @Then("^user sees \"([^\"]*)\" element$")
-public void method5(String param51) throws Throwable {
+public void method6(String param61) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //exists1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.elementExists(param51);
+feature1Page.elementExists(param61);
 
 //<CODE>
 }
