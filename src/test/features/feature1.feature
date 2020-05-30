@@ -8,5 +8,6 @@
  Then user sees "text80" element
  Scenario: User searches for article
  When user clicks the "button100" button
- And clicks "link110" link
- Then user sees "text120" element
+ Then sees "link110" element
+ And clicks "link120" link
+ Then user sees "text130" element
