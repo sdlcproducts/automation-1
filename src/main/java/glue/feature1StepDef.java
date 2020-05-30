@@ -44,6 +44,8 @@ this.properties = Settings.getProperties();
 @After
 public void tearDown(Scenario scenario) throws InterruptedException{
 if (scenario.isFailed()) {
+Set<String> windows = driver.getWindowHandles();
+driver.switchTo().window(Iterables.getLast(windows));
 try {
 byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 scenario.write("Scenario Failed!");
