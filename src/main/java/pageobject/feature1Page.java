@@ -23,21 +23,25 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By link60 = By.xpath("(//a[contains(.,'Companies')])[2]");
+public static By button60 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
 
-public static By link70 = By.xpath("(//div[.='PayPal'])[2]");
+public static By button70 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
 
-public static By link80 = By.xpath("(//div[.='PayPal'])[2]");
+public static By link80 = By.xpath("//a[.='About']/..");
 
-public static By link100 = By.xpath("(//li[@class='-pointer'])[2]");
+public static By link90 = By.xpath("//a[.='About']/..");
 
-public static By text111 = By.xpath("//input");
+public static By text100 = By.xpath("//strong[.='ABOUT KLEINER PERKINS']");
 
-public static By link130 = By.xpath("(//a[contains(.,'People')])[2]");
+public static By button120 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
 
-public static By link140 = By.xpath("(//a[contains(.,'Specialists')])[1]");
+public static By button130 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
 
-public static By link150 = By.xpath("(//a[@href='/people/jess-lee/']//div)[1]");
+public static By link140 = By.xpath("//a[.='Kleiner Perkins Fellows']");
+
+public static By link150 = By.xpath("//a[.='Kleiner Perkins Fellows']");
+
+public static By text160 = By.xpath("//h2[.='Work with one of our Company partners']");
 
 //<XPATHS>
 
@@ -51,22 +55,6 @@ public feature1Page(WebDriver driver){
 this.driver= driver;
 myDriver = new AADriver(this.driver);
 }
-
-public WebElement clickLink(String objectName) throws Exception {
-        //Click Link
-       Field field = null;
-        By by= null;
-        WebElement element=null;
-        try {
-            field = this.getClass().getField(objectName);
-            by = (By) field.get(this);
-            element = driver.findElement(by);
-            element.click();
-        }catch (Exception e){
-            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-        }
-        return element;
-    }
 
  public boolean elementExists(String objectName) throws Exception {
     //Element exists
@@ -83,27 +71,37 @@ public WebElement clickLink(String objectName) throws Exception {
     return status;
   }
 
-public void writeText(String text, String objectName) throws Exception {
+public WebElement clickButton(String objectName) throws Exception {
         //Write Text
-        String actualText = null;
-        Field field = null;
+       Field field = null;
         By by= null;
         WebElement element=null;
         try {
             field = this.getClass().getField(objectName);
             by = (By) field.get(this);
             element = driver.findElement(by);
-            element.clear();
-            element.sendKeys(text);
-            actualText = driver.findElement(by).getAttribute("value");
-            element=null;
+            element.click();
         }catch (Exception e){
             throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
         }
-       //Assert write text
-        assertEquals(text, actualText);
+        return element;
     }
 
+public WebElement clickLink(String objectName) throws Exception {
+        //Click Link
+       Field field = null;
+        By by= null;
+        WebElement element=null;
+        try {
+            field = this.getClass().getField(objectName);
+            by = (By) field.get(this);
+            element = driver.findElement(by);
+            element.click();
+        }catch (Exception e){
+            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+        }
+        return element;
+    }
 
 //<METHOD>
 }
