@@ -3,12 +3,14 @@
  Background:
  Given user navigates to Kleiner Pekins Homepage "https://www.kleinerperkins.com/"
  Scenario: User moves to About page
- When user clicks the "button60" button
- Then sees "link70" element
- And clicks "link80" link
- Then user sees "text90" element
+ When sees the "button60" element
+ Then user clicks the "button70" button
+ Then sees "link80" element
+ And clicks "link90" link
+ Then user sees "text100" element
  Scenario: User searches for article
- When user clicks the "button110" button
- Then sees "link120" element
- And clicks "link130" link
- Then user sees "text140" element
+ When sees the "button120" element
+ Then user clicks the "button130" button
+ Then sees "link140" element
+ And clicks "link150" link
+ Then user sees "text160" element
