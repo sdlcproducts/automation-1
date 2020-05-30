@@ -29,6 +29,12 @@ public static By link70 = By.xpath("//a[.='About']");
 
 public static By text80 = By.xpath("//strong[.='ABOUT KLEINER PERKINS']");
 
+public static By button100 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
+
+public static By link110 = By.xpath("//a[.='Kleiner Perkins Fellows']");
+
+public static By text120 = By.xpath("//h2[.='Work with one of our Company partners']");
+
 //<XPATHS>
 
 /*Page Constructor*/
