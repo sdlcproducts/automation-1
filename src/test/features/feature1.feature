@@ -4,10 +4,11 @@
  Given user navigates to Kleiner Pekins Homepage "https://www.kleinerperkins.com/"
  Scenario: User moves to About page
  When user clicks the "button60" button
- And clicks "link70" link
- Then user sees "text80" element
+ Then sees "link70" element
+ And clicks "link80" link
+ Then user sees "text90" element
  Scenario: User searches for article
- When user clicks the "button100" button
- Then sees "link110" element
- And clicks "link120" link
- Then user sees "text130" element
+ When user clicks the "button110" button
+ Then sees "link120" element
+ And clicks "link130" link
+ Then user sees "text140" element
