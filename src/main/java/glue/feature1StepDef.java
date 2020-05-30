@@ -20,6 +20,8 @@ import java.util.Properties;
 
 import org.junit.*;
 
+import com.google.common.collect.Iterables;
+
 import pageobject.feature1Page;
 
 //<IMPORTS>
