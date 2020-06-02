@@ -1,19 +1,11 @@
 @Demo
- Feature: Kliener Perkins Homepage
+ Feature: Scequoia Homepage
  Background:
- Given user navigates to Kleiner Pekins Homepage "https://www.kleinerperkins.com/"
- Scenario: User moves to About page
- When sees the "button60" element
- Then user clicks the "button70" button
- Then sees "link80" element
- And clicks "link90" link
- Then user sees "text100" element
- Scenario: User searches for article
- When sees the "button120" element
- Then user clicks the "button130" button
- Then sees "link140" element
- And clicks "link150" link
- Then user sees "text160" element
- Scenario: User searches for article
- When sees the "button180" element
- Then user clicks the "button190" button
+ Given user navigates to "https://www.sequoiacap.com/"
+ Scenario: Find Company
+ When user clicks "link60" button
+ Then user sees "link70" element
+ Then user clicks "link80" link
+ Scenario: User searches website
+ When user clicks "button100" button
+ Then user types in "Wow" in "text111" textbox
