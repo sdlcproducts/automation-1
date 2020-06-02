@@ -43,6 +43,10 @@ public static By link150 = By.xpath("//a[.='Kleiner Perkins Fellows']");
 
 public static By text160 = By.xpath("//h2[.='Work with one of our Company partners']");
 
+public static By button180 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
+
+public static By button190 = By.xpath("//button[@class='navbar-toggler hamburger collapsed']");
+
 //<XPATHS>
 
 /*Page Constructor*/
