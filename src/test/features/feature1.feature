@@ -3,9 +3,10 @@
  Background:
  Given user navigates to "https://www.sequoiacap.com/"
  Scenario: Find Company
- When user clicks "link60" button
- Then user sees "link70" element
- Then user clicks "link80" link
+ Then user clicks "link60"
+ When user clicks "link70" button
+ Then user sees "link80" element
+ Then user clicks "link90" link
  Scenario: User searches website
- When user clicks "button100" button
- Then user types in "Wow" in "text111" textbox
+ When user clicks "button110" button
+ Then user types in "Wow" in "text121" textbox
