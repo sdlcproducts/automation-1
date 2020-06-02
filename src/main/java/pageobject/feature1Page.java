@@ -23,15 +23,17 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By link60 = By.xpath("(//a[contains(.,'Companies')])[2]");
+public static By link60 = By.xpath("//a[@class='js-close-announcement']");
 
-public static By link70 = By.xpath("(//div[.='PayPal'])[2]");
+public static By link70 = By.xpath("(//a[contains(.,'Companies')])[2]");
 
 public static By link80 = By.xpath("(//div[.='PayPal'])[2]");
 
-public static By button100 = By.xpath("(//li[@class='-pointer'])[2]");
+public static By link90 = By.xpath("(//div[.='PayPal'])[2]");
 
-public static By text111 = By.xpath("//input");
+public static By button110 = By.xpath("(//li[@class='-pointer'])[2]");
+
+public static By text121 = By.xpath("//input");
 
 //<XPATHS>
 
