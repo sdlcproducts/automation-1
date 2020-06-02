@@ -80,6 +80,7 @@ public void method2(String param21) throws Throwable {
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.elementExists(param21);
 
+
 //<CODE>
 }
 
@@ -89,6 +90,7 @@ public void method3(String param31) throws Throwable {
 //button1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickButton(param31);
+
 
 //<CODE>
 }
