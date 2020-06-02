@@ -76,12 +76,13 @@ driver.get(param11);
 //<CODE>
 }
 
- @Then("^user clicks \"([^\"]*)\"$")
+ @Then("^user clicks \"([^\"]*)\" link$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-////navigation2
+//link1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param21);
 
-driver.get(param21);
 //<CODE>
 }
 
@@ -101,15 +102,6 @@ public void method4(String param41) throws Throwable {
 //exists1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.elementExists(param41);
-//<CODE>
-}
-
- @Then("^user clicks \"([^\"]*)\" link$")
-public void method5(String param51) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//link1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param51);
 //<CODE>
 }
 
