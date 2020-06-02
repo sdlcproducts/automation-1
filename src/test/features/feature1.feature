@@ -14,3 +14,6 @@
  Then sees "link140" element
  And clicks "link150" link
  Then user sees "text160" element
+ Scenario: User searches for article1
+ When sees the "button180" element
+ Then user clicks the "button190" button
