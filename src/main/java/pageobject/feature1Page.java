@@ -48,6 +48,22 @@ this.driver= driver;
 myDriver = new AADriver(this.driver);
 }
 
+public WebElement clickLink(String objectName) throws Exception {
+        //Click Link
+       Field field = null;
+        By by= null;
+        WebElement element=null;
+        try {
+            field = this.getClass().getField(objectName);
+            by = (By) field.get(this);
+            element = driver.findElement(by);
+            element.click();
+        }catch (Exception e){
+            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+        }
+        return element;
+    }
+
 public WebElement clickButton(String objectName) throws Exception {
         //Write Text
        Field field = null;
@@ -78,22 +94,6 @@ public WebElement clickButton(String objectName) throws Exception {
     }
     return status;
   }
-
-public WebElement clickLink(String objectName) throws Exception {
-        //Click Link
-       Field field = null;
-        By by= null;
-        WebElement element=null;
-        try {
-            field = this.getClass().getField(objectName);
-            by = (By) field.get(this);
-            element = driver.findElement(by);
-            element.click();
-        }catch (Exception e){
-            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-        }
-        return element;
-    }
 
 public void writeText(String text, String objectName) throws Exception {
         //Write Text
