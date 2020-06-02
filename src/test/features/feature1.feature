@@ -3,7 +3,7 @@
  Background:
  Given user navigates to "https://www.sequoiacap.com/"
  Scenario: Find Company
- Then user clicks "link60"
+ Then user clicks "link60" link
  When user clicks "link70" button
  Then user sees "link80" element
  Then user clicks "link90" link
