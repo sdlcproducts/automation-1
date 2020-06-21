@@ -25,9 +25,6 @@ import org.junit.*;
 
 import pageobject.feature1Page;
 
-import org.apache.commons.lang.RandomStringUtils;
-import pageobject.feature1Page;
-
 //<IMPORTS>
 
 public class feature1StepDef {
@@ -76,41 +73,20 @@ driver.get(param11);
 //<CODE>
 }
 
- @Then("^user clicks \"([^\"]*)\" link$")
+ @Click("^forgot account When user sees \"([^\"]*)\" link$")
 public void method2(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//null
+driver.get(param21);
+//<CODE>
+}
+
+ @Then("^user clicks \"([^\"]*)\" link$")
+public void method3(String param31) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //link1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickLink(param21);
-
-//<CODE>
-}
-
- @When("^user clicks \"([^\"]*)\" button$")
-public void method3(String param31) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//button1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param31);
-
-//<CODE>
-}
-
- @Then("^user sees \"([^\"]*)\" element$")
-public void method4(String param41) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//exists1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.elementExists(param41);
-//<CODE>
-}
-
- @Then("^user types in \"([^\"]*)\" in \"([^\"]*)\" textbox$")
-public void method7(String param71, String param72) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//text2
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.writeText(param71, param72);
+feature1Page.clickLink(param31);
 //<CODE>
 }
 
