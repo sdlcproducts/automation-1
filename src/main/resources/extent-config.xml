@@ -2,7 +2,7 @@
 <extentreports>
 	<configuration>
 		<encoding>UTF-8</encoding>
-		<documentTitle>Agile Automation Reports</documentTitle>
+		<documentTitle>Vadr Automation Reports</documentTitle>
 		<reportName>Test Runs</reportName>
 		<reportHeadline>Execution Report</reportHeadline>
 		<theme>dark</theme>

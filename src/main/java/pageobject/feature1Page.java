@@ -15,69 +15,61 @@ import static org.junit.Assert.assertEquals;
 
 public class feature1Page {
 
-public static WebDriver driver;
-AADriver myDriver;
-public static Properties properties;
+  public static WebDriver driver;
+  AADriver myDriver;
+  public static Properties properties;
 
 
-/*Xpaths*/
-public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
-public static By searchBox = By.xpath("//input[@title='Search']");
-public static By button70 = By.xpath("(//input[contains(@class,'u-btn u-btn--primary u-btn--block qa-continue-button')])[1]");
+  /*Xpaths*/
+  public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
+  public static By searchBox = By.xpath("//input[@title='Search']");
+  public static By link60 = By.xpath("(//a[contains(.,'Forgot account?')])[1]");
 
-public static By textbox60 = By.xpath("(//input[contains(@class,'c-form-group__text-input c-form-group__text-input--pronounced c-form-group__text-input--username username qa-username-input')])[1]");
+  public static By link70 = By.xpath("(//a[contains(.,'Forgot account?')])[1]");
 
 //<XPATHS>
 
-/*Page Constructor*/
-public feature1Page(){
+  /*Page Constructor*/
+  public feature1Page(){
 
-}
+  }
 
 
-public feature1Page(WebDriver driver){
-this.driver= driver;
-myDriver = new AADriver(this.driver);
-}
+  public feature1Page(WebDriver driver){
+    this.driver= driver;
+    myDriver = new AADriver(this.driver);
+  }
 
-public WebElement clickButton(String objectName) throws Exception {
-        //Write Text
-        String actualText = null;
-        Field field = null;
-        By by= null;
-        WebElement element=null;
-        try {
-            field = this.getClass().getField(objectName);
-            by = (By) field.get(this);
-            element = driver.findElement(by);
-            element.click();
-        }catch (Exception e){
-            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-        }
-        return element;
+  public boolean elementExists(String objectName) throws Exception {
+    //Element exists
+    Field field = null;
+    By by= null;
+    boolean status;
+    try {
+      field = this.getClass().getField(objectName);
+      by = (By) field.get(this);
+      status = myDriver.verifyObjectPresent(by);
+    }catch (Exception e){
+      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
     }
+    return status;
+  }
 
-public void writeText(String text, String objectName) throws Exception {
-        //Write Text
-        String actualText = null;
-        Field field = null;
-        By by= null;
-        WebElement element=null;
-        try {
-            field = this.getClass().getField(objectName);
-            by = (By) field.get(this);
-            element = driver.findElement(by);
-            element.clear();
-            element.sendKeys(text);
-            actualText = driver.findElement(by).getAttribute("value");
-            element=null;
-        }catch (Exception e){
-            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-        }
-       //Assert write text
-        assertEquals(text, actualText);
+  public WebElement clickLink(String objectName) throws Exception {
+    //Click Link
+    Field field = null;
+    By by= null;
+    WebElement element=null;
+    try {
+      field = this.getClass().getField(objectName);
+      by = (By) field.get(this);
+      element = driver.findElement(by);
+      element.click();
+    }catch (Exception e){
+      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
     }
-
+    return element;
+  }
 
 //<METHOD>
 }

@@ -1,7 +1,8 @@
-@Wow
- Feature: This setups the automation project
+@Hi
+  Feature: Try automation
  Background:
- 	Given user opens "Allegis" portal on "TEST" environment
- Scenario: Type in page       
-     Then user types into "textbox60" textbox
-     Given user clicks "button70" button
+  Given user navigates to "https://www.facebook.com" 
+  Scenario: Click forgot account 
+ When user sees "link60" element
+  Then user clicks "link70" link
+
