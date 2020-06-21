@@ -15,32 +15,32 @@ import static org.junit.Assert.assertEquals;
 
 public class feature1Page {
 
-  public static WebDriver driver;
-  AADriver myDriver;
-  public static Properties properties;
+public static WebDriver driver;
+AADriver myDriver;
+public static Properties properties;
 
 
-  /*Xpaths*/
-  public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
-  public static By searchBox = By.xpath("//input[@title='Search']");
-  public static By link60 = By.xpath("(//a[contains(.,'Forgot account?')])[1]");
+/*Xpaths*/
+public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
+public static By searchBox = By.xpath("//input[@title='Search']");
+public static By link60 = By.xpath("(//a[contains(.,'Forgot account?')])[1]");
 
-  public static By link70 = By.xpath("(//a[contains(.,'Forgot account?')])[1]");
+public static By link70 = By.xpath("(//a[contains(.,'Forgot account?')])[1]");
 
 //<XPATHS>
 
-  /*Page Constructor*/
-  public feature1Page(){
+/*Page Constructor*/
+public feature1Page(){
 
-  }
+}
 
 
-  public feature1Page(WebDriver driver){
-    this.driver= driver;
-    myDriver = new AADriver(this.driver);
-  }
+public feature1Page(WebDriver driver){
+this.driver= driver;
+myDriver = new AADriver(this.driver);
+}
 
-  public boolean elementExists(String objectName) throws Exception {
+ public boolean elementExists(String objectName) throws Exception {
     //Element exists
     Field field = null;
     By by= null;
@@ -55,21 +55,21 @@ public class feature1Page {
     return status;
   }
 
-  public WebElement clickLink(String objectName) throws Exception {
-    //Click Link
-    Field field = null;
-    By by= null;
-    WebElement element=null;
-    try {
-      field = this.getClass().getField(objectName);
-      by = (By) field.get(this);
-      element = driver.findElement(by);
-      element.click();
-    }catch (Exception e){
-      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+public WebElement clickLink(String objectName) throws Exception {
+        //Click Link
+       Field field = null;
+        By by= null;
+        WebElement element=null;
+        try {
+            field = this.getClass().getField(objectName);
+            by = (By) field.get(this);
+            element = driver.findElement(by);
+            element.click();
+        }catch (Exception e){
+            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+        }
+        return element;
     }
-    return element;
-  }
 
 //<METHOD>
 }
