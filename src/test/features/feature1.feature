@@ -1,4 +1,4 @@
-@Bye 
+@Hi 
  Feature: Try automation  
  Background: 
  Given user navigates to "https://www.facebook.com"  
