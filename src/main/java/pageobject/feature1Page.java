@@ -40,6 +40,21 @@ this.driver= driver;
 myDriver = new AADriver(this.driver);
 }
 
+ public boolean elementExists(String objectName) throws Exception {
+    //Element exists
+    Field field = null;
+    By by= null;
+    boolean status;
+    try {
+      field = this.getClass().getField(objectName);
+      by = (By) field.get(this);
+      status = myDriver.verifyObjectPresent(by);
+    }catch (Exception e){
+      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+    }
+    return status;
+  }
+
 public WebElement clickLink(String objectName) throws Exception {
         //Click Link
        Field field = null;
