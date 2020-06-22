@@ -73,12 +73,11 @@ driver.get(param11);
 //<CODE>
 }
 
- @When("^user sees \"([^\"]*)\" element$")
+ @When("^user sees \"([^\"]*)\" link$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//exists1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.elementExists(param21);
+//null
+driver.get(param21);
 //<CODE>
 }
 
