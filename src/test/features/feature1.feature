@@ -1,10 +1,7 @@
-@Demo
- Feature: Scequoia People page
-  
+@Hi 
+ Feature: Try automation  
  Background:
- Given users navigate to "https://www.sequoiacap.com/"
-  
- Scenario: Navigate to people page
- When userss clicks "link80" link
- Then users clicks "Specialist" link
- Then user clickss on "JessLee" link
+  Given user navigates to "https://www.facebook.com" 
+  Scenario: Click forgot account
+  When user sees "link60" element 
+ Then user clicks "link70" link
