@@ -65,29 +65,36 @@ Thread.sleep(10000);
 }
 
 
-@Given("^user navigates to \"([^\"]*)\"$")
+@Given("^users navigate to \"([^\"]*)\"$")
 public void method1(String param11) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//navigation2
-driver.get(param11);
 //<CODE>
 }
 
- @When("^user sees \"([^\"]*)\" element$")
+ @When("^userss clicks \"([^\"]*)\" link$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//exists1
+//link1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.elementExists(param21);
+feature1Page.clickLink(param21);
 //<CODE>
 }
 
- @Then("^user clicks \"([^\"]*)\" link$")
+ @Then("^users clicks \"([^\"]*)\" link$")
 public void method3(String param31) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //link1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickLink(param31);
+//<CODE>
+}
+
+ @Then("^user clickss on \"([^\"]*)\" link$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//null
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickLink(param41);
 //<CODE>
 }
 
