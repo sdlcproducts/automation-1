@@ -23,11 +23,9 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By button60 = By.xpath("(//input[contains(@id,'gbqfbb')])[1]");
+public static By link60 = By.xpath("//a[.='Forgot account?']");
 
-public static By link70 = By.xpath("(//a[contains(.,'Business')])[1]");
-
-public static By link80 = By.xpath("(//a[contains(.,'How Search works')])[1]");
+public static By link70 = By.xpath("//a[.='Forgot account?']");
 
 //<XPATHS>
 
@@ -41,6 +39,21 @@ public feature1Page(WebDriver driver){
 this.driver= driver;
 myDriver = new AADriver(this.driver);
 }
+
+ public boolean elementExists(String objectName) throws Exception {
+    //Element exists
+    Field field = null;
+    By by= null;
+    boolean status;
+    try {
+      field = this.getClass().getField(objectName);
+      by = (By) field.get(this);
+      status = myDriver.verifyObjectPresent(by);
+    }catch (Exception e){
+      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+    }
+    return status;
+  }
 
 public WebElement clickLink(String objectName) throws Exception {
         //Click Link
