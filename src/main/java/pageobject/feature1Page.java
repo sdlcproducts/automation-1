@@ -23,9 +23,9 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By link60 = By.xpath("//a[.='Forgot account?']");
+public static By button60 = By.xpath("");
 
-public static By link70 = By.xpath("//a[.='Forgot account?']");
+public static By button70 = By.xpath("");
 
 //<XPATHS>
 
