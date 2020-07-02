@@ -1,8 +1,5 @@
-@{Your tag here}
-Feature: {feature description here}
-
-Background:
-{background here}
-
-Scenario: {scenario description here}
-{scenario here}
+@Tag
+ Feature: feature 1
+ Background:
+ Scenario: scenario 1
+ When the user presses the "button50"
