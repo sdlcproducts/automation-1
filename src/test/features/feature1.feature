@@ -1,5 +1,5 @@
-@Tag
+@Wow
  Feature: feature 1
  Background:
- Scenario: scenario 1
+ Scenario: hi
  When the user presses the "button50"
