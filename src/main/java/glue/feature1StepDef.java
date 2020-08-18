@@ -23,6 +23,8 @@ import java.util.Properties;
 import org.junit.*;
 
 
+import pageobject.feature1Page;
+
 import org.apache.commons.lang.RandomStringUtils;
 import pageobject.feature1Page;
 
@@ -74,21 +76,30 @@ driver.get(param11);
 //<CODE>
 }
 
- @When("^user types in to \"([^\"]*)\" textbox$")
+ @When("^user sees \"([^\"]*)\" element$")
 public void method2(String param21) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
-//text1
+//exists1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.writeText(RandomStringUtils.randomAlphanumeric(20), param21);
+feature1Page.elementExists(param21);
+//<CODE>
+}
+
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
+public void method3(String param31, String param32) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//text2
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.writeText(param31, param32);
 //<CODE>
 }
 
  @Then("^user clicks on \"([^\"]*)\" button$")
-public void method3(String param31) throws Throwable {
+public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //button1
 feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param31);
+feature1Page.clickButton(param41);
 //<CODE>
 }
 
