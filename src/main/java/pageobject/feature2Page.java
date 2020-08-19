@@ -27,6 +27,8 @@ public static By text60 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]"
 
 public static By text71 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
+public static By button80 = By.xpath("(//input[contains(@id,'gbqfbb')])[1]");
+
 //<XPATHS>
 
 /*Page Constructor*/
@@ -76,6 +78,22 @@ public void writeText(String text, String objectName) throws Exception {
         assertEquals(text, actualText);
     }
 
+
+public WebElement clickButton(String objectName) throws Exception {
+        //Write Text
+       Field field = null;
+        By by= null;
+        WebElement element=null;
+        try {
+            field = this.getClass().getField(objectName);
+            by = (By) field.get(this);
+            element = driver.findElement(by);
+            element.click();
+        }catch (Exception e){
+            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
+        }
+        return element;
+    }
 
 //<METHOD>
 }
