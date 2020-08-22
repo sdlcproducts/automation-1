@@ -67,26 +67,8 @@ Thread.sleep(10000);
 }
 
 
-@Given("^user navigates to \"([^\"]*)\"$")
-public void method1(String param11) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//<CODE>
-}
-
- @When("^user sees \"([^\"]*)\" element$")
-public void method2(String param21) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//<CODE>
-}
-
- @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
+@Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox on "feature1"$")
 public void method3(String param31, String param32) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" button$")
-public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //<CODE>
 }
@@ -105,28 +87,6 @@ public void method4(String param41) throws Throwable {
     }
     return status;
   }
-
-public void writeText(String text, String objectName) throws Exception {
-        //Write Text
-        String actualText = null;
-        Field field = null;
-        By by= null;
-        WebElement element=null;
-        try {
-            field = this.getClass().getField(objectName);
-            by = (By) field.get(this);
-            element = driver.findElement(by);
-            element.clear();
-            element.sendKeys(text);
-            actualText = driver.findElement(by).getAttribute("value");
-            element=null;
-        }catch (Exception e){
-            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-        }
-       //Assert write text
-        assertEquals(text, actualText);
-    }
-
 
 public WebElement clickButton(String objectName) throws Exception {
         //Write Text
