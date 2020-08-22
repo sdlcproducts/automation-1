@@ -1,11 +1,27 @@
-package pageobject;
+package glue;
 
-import java.util.Properties;
-
-import org.openqa.selenium.By;
+import com.google.common.collect.Iterables;
+import framework.Settings;
+import java.util.Set;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import cucumber.api.java.en.But;
+import cucumber.api.java.en.And;
 import framework.AADriver;
+import framework.WebDriverFactory;
+
+import static org.junit.Assert.assertTrue;
+import java.util.Properties;
+
+import org.junit.*;
+
 
 import java.lang.reflect.Field;
 import org.openqa.selenium.WebElement;
@@ -13,36 +29,69 @@ import static org.junit.Assert.assertEquals;
 
 //<IMPORTS>
 
-public class feature1Page {
+public class feature1StepDef {
+private WebDriverFactory contextSteps;
+private WebDriver driver;
+private AADriver myDriver;
+private static Properties properties;
+private String portal;
+private String environment;
 
-public static WebDriver driver;
-AADriver myDriver;
-public static Properties properties;
 
 
-/*Xpaths*/
-public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
-public static By searchBox = By.xpath("//input[@title='Search']");
-public static By text60 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
+public feature1StepDef(WebDriverFactory contentSteps){
+this.driver = contentSteps.getDriver();
+myDriver = new AADriver(driver);
+this.properties = Settings.getProperties();
+}
 
-public static By text71 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
-public static By button80 = By.xpath("(//input[contains(@class,'gNO89b')])[2]");
+@After
+public void tearDown(Scenario scenario) throws InterruptedException{
+if (scenario.isFailed()) {
+Set<String> windows = driver.getWindowHandles();
+driver.switchTo().window(Iterables.getLast(windows));
+try {
+byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+scenario.write("Scenario Failed!");
+scenario.embed(screenshot, "image/png");
+} catch (Exception e) {
+// TODO: handle exception
+e.printStackTrace();
 
-//<XPATHS>
-
-/*Page Constructor*/
-public feature1Page(){
+}
+}
+//Slow down the script
+Thread.sleep(10000);
 
 }
 
 
-public feature1Page(WebDriver driver){
-this.driver= driver;
-myDriver = new AADriver(this.driver);
+@Given("^user navigates to \"([^\"]*)\"$")
+public void method1(String param11) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
 }
 
- public boolean elementExists(String objectName) throws Exception {
+ @When("^user sees \"([^\"]*)\" element$")
+public void method2(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
+public void method3(String param31, String param32) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+  public boolean elementExists(String objectName) throws Exception {
     //Element exists
     Field field = null;
     By by= null;
@@ -96,4 +145,6 @@ public WebElement clickButton(String objectName) throws Exception {
     }
 
 //<METHOD>
+
+
 }
