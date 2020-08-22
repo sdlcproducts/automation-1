@@ -67,8 +67,20 @@ Thread.sleep(10000);
 }
 
 
-@Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
-public void method3(String param31, String param32, String param33) throws Throwable {
+@Given("^user navigates to \"([^\"]*)\"$")
+public void method1(String param11) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @When("^user sees \"([^\"]*)\" element$")
+public void method2(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button$")
+public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //<CODE>
 }
