@@ -77,6 +77,34 @@ public void method3(String param31, String param32, String param33) throws Throw
 // Write code here that turns the phrase above into concrete actions
 //text2
 myDriver.typeOnPage(param31, param32, param33+"Page");
+
+//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//button1
+feature1Page feature1Page = new feature1Page(driver);
+feature1Page.clickButton(param41);
+//<CODE>
+}
+
+ @Given("^user navigates to \"([^\"]*)\"$")
+public void method1(String param11) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @When("^user sees \"([^\"]*)\" element$")
+public void method2(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method3(String param31, String param32, String param33) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
 //<CODE>
 }
 
