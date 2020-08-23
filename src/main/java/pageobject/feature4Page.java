@@ -1,164 +1,44 @@
-package glue;
+package pageobject;
 
-import com.google.common.collect.Iterables;
-import framework.Settings;
-import java.util.Set;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import cucumber.api.java.en.But;
-import cucumber.api.java.en.And;
-import framework.AADriver;
-import framework.WebDriverFactory;
-
-import static org.junit.Assert.assertTrue;
 import java.util.Properties;
 
-import org.junit.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
+import framework.AADriver;
 
-import pageobject.feature1Page;
-
-import org.apache.commons.lang.RandomStringUtils;
-import pageobject.feature1Page;
-
-import pageobject.feature4Page;
-
-import org.apache.commons.lang.RandomStringUtils;
-import pageobject.feature4Page;
-
-import java.lang.reflect.Field;
 import org.openqa.selenium.WebElement;
-import static org.junit.Assert.assertEquals;
 
 //<IMPORTS>
 
-public class StepDefinitions {
-private WebDriverFactory contextSteps;
-private WebDriver driver;
-private AADriver myDriver;
-private static Properties properties;
-private String portal;
-private String environment;
+public class feature4Page {
+
+public static WebDriver driver;
+AADriver myDriver;
+public static Properties properties;
 
 
+/*Xpaths*/
+public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
+public static By searchBox = By.xpath("//input[@title='Search']");
+public static By text60 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
-public StepDefinitions(WebDriverFactory contentSteps){
-this.driver = contentSteps.getDriver();
-myDriver = new AADriver(driver);
-this.properties = Settings.getProperties();
-}
+public static By text71 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
+public static By button80 = By.xpath("(//input[contains(@class,'gNO89b')])[1]");
 
-@After
-public void tearDown(Scenario scenario) throws InterruptedException{
-if (scenario.isFailed()) {
-Set<String> windows = driver.getWindowHandles();
-driver.switchTo().window(Iterables.getLast(windows));
-try {
-byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-scenario.write("Scenario Failed!");
-scenario.embed(screenshot, "image/png");
-} catch (Exception e) {
-// TODO: handle exception
-e.printStackTrace();
+//<XPATHS>
 
-}
-}
-//Slow down the script
-Thread.sleep(10000);
+/*Page Constructor*/
+public feature4Page(){
 
 }
 
 
-@Given("^user navigates to \"([^\"]*)\"$")
-public void method1(String param11) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//navigation2
-driver.get(param11);
-
-
-
-//<CODE>
+public feature4Page(WebDriver driver){
+this.driver= driver;
+myDriver = new AADriver(this.driver);
 }
-
- @When("^user sees \"([^\"]*)\" element$")
-public void method2(String param21) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//exists1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.elementExists(param21);
-
-
-//exists1
-feature4Page feature4Page = new feature4Page(driver);
-feature4Page.elementExists(param21);
-//<CODE>
-}
-
- @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
-public void method3(String param31, String param32, String param33) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//text2
-myDriver.typeOnPage(param31, param32, param33);
-
-
-
-//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" button$")
-public void method4(String param41) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//button1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param41);
-
-
-//button1
-feature4Page feature4Page = new feature4Page(driver);
-feature4Page.clickButton(param41);
-//<CODE>
-}
-
-  public boolean elementExists(String objectName) throws Exception {
-    //Element exists
-    Field field = null;
-    By by= null;
-    boolean status;
-    try {
-      field = this.getClass().getField(objectName);
-      by = (By) field.get(this);
-      status = myDriver.verifyObjectPresent(by);
-    }catch (Exception e){
-      throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-    }
-    return status;
-  }
-
-public WebElement clickButton(String objectName) throws Exception {
-        //Write Text
-       Field field = null;
-        By by= null;
-        WebElement element=null;
-        try {
-            field = this.getClass().getField(objectName);
-            by = (By) field.get(this);
-            element = driver.findElement(by);
-            element.click();
-        }catch (Exception e){
-            throw new Exception(objectName+" not found in "+ this.getClass().getName()+".class\n"  + e);
-        }
-        return element;
-    }
 
 //<METHOD>
-
-
 }
