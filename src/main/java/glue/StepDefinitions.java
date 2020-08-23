@@ -25,6 +25,7 @@ import org.junit.*;
 
 import pageobject.feature4Page;
 import pageobject.feature1Page;
+import pageobject.feature5Page;
 //<IMPORTS>
 
 public class StepDefinitions {
@@ -93,6 +94,12 @@ myDriver.clickOnPage(param41, param42);//<CODE>
 public void method8(String param41, String param42) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//button1
 myDriver.clickOnPage(param41, param42);//<CODE>
+}
+
+ @When("^user sees \"([^\"]*)\" element in \"([^\"]*)\" page$")
+public void method7(String param21, String param22) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//exists1
+myDriver.verifyObjectPresentOnPage(param21, param22);//<CODE>
 }
 
  //<METHOD>
