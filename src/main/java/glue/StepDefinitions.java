@@ -87,6 +87,7 @@ driver.get(param11);
 
 
 
+
 //<CODE>
 }
 
@@ -101,6 +102,7 @@ feature1Page.elementExists(param21);
 //exists1
 feature4Page feature4Page = new feature4Page(driver);
 feature4Page.elementExists(param21);
+
 
 
 
@@ -124,6 +126,7 @@ myDriver.typeOnPage(param31, param32, param33);
 
 
 
+
 //<CODE>
 }
 
@@ -138,6 +141,7 @@ feature1Page.clickButton(param41);
 //button1
 feature4Page feature4Page = new feature4Page(driver);
 feature4Page.clickButton(param41);
+
 
 
 
