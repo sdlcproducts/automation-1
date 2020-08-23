@@ -28,6 +28,11 @@ import pageobject.feature1Page;
 import org.apache.commons.lang.RandomStringUtils;
 import pageobject.feature1Page;
 
+import pageobject.feature4Page;
+
+import org.apache.commons.lang.RandomStringUtils;
+import pageobject.feature4Page;
+
 //<IMPORTS>
 
 public class StepDefinitions {
@@ -75,6 +80,7 @@ public void method1(String param11) throws Throwable {
 driver.get(param11);
 
 
+
 //<CODE>
 }
 
@@ -86,6 +92,9 @@ feature1Page feature1Page = new feature1Page(driver);
 feature1Page.elementExists(param21);
 
 
+//exists1
+feature4Page feature4Page = new feature4Page(driver);
+feature4Page.elementExists(param21);
 //<CODE>
 }
 
@@ -94,6 +103,7 @@ public void method3(String param31, String param32, String param33) throws Throw
 // Write code here that turns the phrase above into concrete actions
 //text2
 myDriver.typeOnPage(param31, param32, param33);
+
 
 
 //<CODE>
@@ -107,6 +117,9 @@ feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickButton(param41);
 
 
+//button1
+feature4Page feature4Page = new feature4Page(driver);
+feature4Page.clickButton(param41);
 //<CODE>
 }
 
