@@ -34,7 +34,7 @@ import static org.junit.Assert.assertEquals;
 
 //<IMPORTS>
 
-public class <ClassNameStepDef> {
+public class StepDefinitions {
 private WebDriverFactory contextSteps;
 private WebDriver driver;
 private AADriver myDriver;
@@ -44,7 +44,7 @@ private String environment;
 
 
 
-public <ClassNameStepDef>(WebDriverFactory contentSteps){
+public StepDefinitions(WebDriverFactory contentSteps){
 this.driver = contentSteps.getDriver();
 myDriver = new AADriver(driver);
 this.properties = Settings.getProperties();
@@ -78,6 +78,7 @@ public void method1(String param11) throws Throwable {
 //navigation2
 driver.get(param11);
 
+
 //<CODE>
 }
 
@@ -88,6 +89,7 @@ public void method2(String param21) throws Throwable {
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.elementExists(param21);
 
+
 //<CODE>
 }
 
@@ -96,6 +98,7 @@ public void method3(String param31, String param32, String param33) throws Throw
 // Write code here that turns the phrase above into concrete actions
 //text2
 myDriver.typeOnPage(param31, param32, param33);
+
 
 //<CODE>
 }
@@ -106,6 +109,7 @@ public void method4(String param41) throws Throwable {
 //button1
 feature1Page feature1Page = new feature1Page(driver);
 feature1Page.clickButton(param41);
+
 
 //<CODE>
 }
