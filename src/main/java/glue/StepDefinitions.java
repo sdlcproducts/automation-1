@@ -91,7 +91,8 @@ myDriver.clickOnPage(param41, param42);//<CODE>
 
  @Then("^user clicks on \"([^\"]*)\" button in \"([^\"]*)\" page$")
 public void method4(String param41, String param42) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//<CODE>
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param41, param42);//<CODE>
 }
 
  //<METHOD>
