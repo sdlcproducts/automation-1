@@ -25,6 +25,8 @@ import org.junit.*;
 
 import pageobject.feature1Page;
 
+import pageobject.feature4Page;
+
 //<IMPORTS>
 
 public class StepDefinitions {
@@ -87,6 +89,17 @@ myDriver.typeOnPage(param31, param32, param33);//<CODE>
 public void method4(String param41, String param42) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//button1
 myDriver.clickOnPage(param41, param42);//<CODE>
+}
+
+ @When("^user sees \"([^\"]*)\" element$")
+public void method2(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//null
+driver.get(param21);//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button$")
+public void method4(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//<CODE>
 }
 
  //<METHOD>
