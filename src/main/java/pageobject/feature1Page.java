@@ -23,18 +23,13 @@ import java.util.Properties;
 import org.junit.*;
 
 
-import pageobject.feature1Page;
-
-import org.apache.commons.lang.RandomStringUtils;
-import pageobject.feature1Page;
-
 import java.lang.reflect.Field;
 import org.openqa.selenium.WebElement;
 import static org.junit.Assert.assertEquals;
 
 //<IMPORTS>
 
-public class feature1StepDef {
+public class <ClassNameStepDef> {
 private WebDriverFactory contextSteps;
 private WebDriver driver;
 private AADriver myDriver;
@@ -44,7 +39,7 @@ private String environment;
 
 
 
-public feature1StepDef(WebDriverFactory contentSteps){
+public <ClassNameStepDef>(WebDriverFactory contentSteps){
 this.driver = contentSteps.getDriver();
 myDriver = new AADriver(driver);
 this.properties = Settings.getProperties();
@@ -72,25 +67,7 @@ Thread.sleep(10000);
 }
 
 
-@Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
-public void method3(String param31, String param32, String param33) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//text2
-myDriver.typeOnPage(param31, param32, param33+"Page");
-
-//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" button$")
-public void method4(String param41) throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//button1
-feature1Page feature1Page = new feature1Page(driver);
-feature1Page.clickButton(param41);
-//<CODE>
-}
-
- @Given("^user navigates to \"([^\"]*)\"$")
+@Given("^user navigates to \"([^\"]*)\"$")
 public void method1(String param11) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //<CODE>
