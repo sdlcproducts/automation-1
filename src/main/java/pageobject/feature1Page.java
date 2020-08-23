@@ -7,6 +7,12 @@ import org.openqa.selenium.WebDriver;
 
 import framework.AADriver;
 
+import java.lang.reflect.Field;
+
+import org.openqa.selenium.WebElement;
+
+import static org.junit.Assert.assertEquals;
+
 //<IMPORTS>
 
 public class feature1Page {
