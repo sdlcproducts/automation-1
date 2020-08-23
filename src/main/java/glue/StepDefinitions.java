@@ -102,6 +102,12 @@ public void method7(String param21, String param22) throws Throwable {
 myDriver.verifyObjectPresentOnPage(param21, param22);//<CODE>
 }
 
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
+public void method9(String param31, String param32, String param33) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param31, param32, param33);//<CODE>
+}
+
  //<METHOD>
 
 
