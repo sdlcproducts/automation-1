@@ -70,6 +70,7 @@ public void method1(String param11) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //navigation2
 driver.get(param11);
+
 //<CODE>
 }
 
@@ -85,6 +86,7 @@ public void method3(String param31, String param32, String param33) throws Throw
 // Write code here that turns the phrase above into concrete actions
 //text2
 myDriver.typeOnPage(param31, param32, param33);
+
 //<CODE>
 }
 
@@ -92,6 +94,21 @@ myDriver.typeOnPage(param31, param32, param33);
 public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 
+//<CODE>
+}
+
+ @When("^user sees \"([^\"]*)\" element on \"([^\"]*)\" page$")
+public void method2(String param21, String param22) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+
+//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button in \"([^\"]*)\" page$")
+public void method4(String param41, String param42) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//button1
+myDriver.clickOnPage(param41, param42);
 //<CODE>
 }
 
