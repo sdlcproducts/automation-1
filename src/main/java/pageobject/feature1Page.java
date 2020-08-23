@@ -25,7 +25,7 @@ public static By text60 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]"
 
 public static By text71 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
-public static By button80 = By.xpath("(//input[contains(@class,'gNO89b')])[2]");
+public static By button80 = By.xpath("(//input[contains(@id,'gbqfbb')])[2]");
 
 //<XPATHS>
 
