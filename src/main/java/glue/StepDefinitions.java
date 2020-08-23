@@ -83,6 +83,7 @@ driver.get(param11);
 
 
 
+
 //<CODE>
 }
 
@@ -99,6 +100,7 @@ feature4Page feature4Page = new feature4Page(driver);
 feature4Page.elementExists(param21);
 
 
+
 //<CODE>
 }
 
@@ -107,6 +109,7 @@ public void method3(String param31, String param32, String param33) throws Throw
 // Write code here that turns the phrase above into concrete actions
 //text2
 myDriver.typeOnPage(param31, param32, param33);
+
 
 
 
@@ -126,6 +129,7 @@ feature1Page.clickButton(param41);
 //button1
 feature4Page feature4Page = new feature4Page(driver);
 feature4Page.clickButton(param41);
+
 
 
 //<CODE>
