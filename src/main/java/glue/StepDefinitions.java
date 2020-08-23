@@ -100,6 +100,11 @@ public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//<CODE>
 }
 
+ @Then("^user clicks on \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method4(String param41, String param42) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//<CODE>
+}
+
  //<METHOD>
 
 
