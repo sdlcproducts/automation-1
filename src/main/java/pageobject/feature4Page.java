@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import framework.AADriver;
 
 import org.openqa.selenium.WebElement;
-
 //<IMPORTS>
 
 public class feature4Page {
