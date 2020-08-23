@@ -25,6 +25,7 @@ import org.junit.*;
 
 import pageobject.feature1Page;
 import pageobject.feature4Page;
+import pageobject.feature5Page;
 //<IMPORTS>
 
 public class StepDefinitions {
@@ -93,6 +94,12 @@ myDriver.clickOnPage(param41, param42);//<CODE>
 public void method5(String param41, String param42) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//button1
 myDriver.clickOnPage(param41, param42);//<CODE>
+}
+
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
+public void method6(String param31, String param32, String param33) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param31, param32, param33);//<CODE>
 }
 
  //<METHOD>
