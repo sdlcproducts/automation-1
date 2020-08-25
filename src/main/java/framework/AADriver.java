@@ -761,9 +761,10 @@ public class AADriver {
    * @throws Exception
    */
   public void clickOnPage(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     try{
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
       driver.findElement((By) field.get(obj)).click();
       field=null;
@@ -781,9 +782,10 @@ public class AADriver {
    * @throws Exception
    */
   public void typeOnPage(String text,String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     try{
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
       driver.findElement((By) field.get(obj)).sendKeys(text);
       field=null;
@@ -801,9 +803,10 @@ public class AADriver {
    * @throws Exception
    */
   public boolean verifyObjectPresentOnPage(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     try{
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
       if (driver.findElements((By) field.get(obj)).size()>0){
         field=null;
@@ -828,10 +831,11 @@ public class AADriver {
    * @throws Exception
    */
   public void doubleClickOnPage(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     Actions act = new Actions(driver);
     try{
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
 //	            System.out.println(field.get(obj));
       object = (WebElement) wait.until(ExpectedConditions.visibilityOfElementLocated((By)field.get(obj)));
@@ -852,10 +856,11 @@ public class AADriver {
    * @throws Exception
    */
   public void clearTextOnPage(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     Actions act = new Actions(driver);
     try{
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
 //	            System.out.println(field.get(obj));
       driver.findElement((By) field.get(obj)).clear();
@@ -875,10 +880,11 @@ public class AADriver {
    * @throws Exception
    */
   public void mouseHoverOnPage(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     Actions act = new Actions(driver);
     try{
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
 //	            System.out.println(field.get(obj));
       object = (WebElement) wait.until(ExpectedConditions.visibilityOfElementLocated((By)field.get(obj)));
@@ -899,9 +905,10 @@ public class AADriver {
    * @throws Exception
    */
   public boolean isDisabledElementOnPage(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     try {
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
       System.out.println(field.get(obj));
       driver.findElement((By) field.get(obj)).click();
@@ -931,10 +938,11 @@ public class AADriver {
    * @throws Exception
    */
   public void rightClickOnPage(String rtClickObjectName, String selectObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
     Actions act = new Actions(driver);
     try {
-      Class<?> clazz = Class.forName("main.java.pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(rtClickObjectName);
       System.out.println(field.get(obj));
       object = (WebElement) wait.until(ExpectedConditions.visibilityOfElementLocated((By)field.get(obj)));
@@ -968,9 +976,10 @@ public class AADriver {
    * @throws Exception
    */
   public void selectDropdownOnPage(String selection, String dropdown, String pageName) throws Exception {
+    pageName = pageName + "Page";
     try{
       Class<?> clazz = Class.forName("pageobject."+pageName);
-      Object obj = clazz.newInstance();
+      Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(dropdown);
       Select dropdwn=new Select(driver.findElement((By) field.get(obj)));
       dropdwn.selectByVisibleText(selection);
