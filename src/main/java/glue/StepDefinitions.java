@@ -23,10 +23,6 @@ import java.util.Properties;
 import org.junit.*;
 
 
-import pageobject.feature1Page;
-import pageobject.feature4Page;
-import pageobject.feature5Page;
-import pageobject.feature6Page;
 //<IMPORTS>
 
 public class StepDefinitions {
