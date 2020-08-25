@@ -22,11 +22,7 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By text60 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
-
-public static By text71 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
-
-public static By text80 = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
+public static By SearchBarText = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
 //<XPATHS>
 
