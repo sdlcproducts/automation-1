@@ -23,6 +23,7 @@ import java.util.Properties;
 import org.junit.*;
 
 
+import pageobject.feature5Page;
 //<IMPORTS>
 
 public class StepDefinitions {
