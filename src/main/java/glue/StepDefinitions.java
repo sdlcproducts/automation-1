@@ -12,18 +12,13 @@ import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import cucumber.api.java.en.But;
-import cucumber.api.java.en.And;
 import framework.AADriver;
 import framework.WebDriverFactory;
 
 import static org.junit.Assert.assertTrue;
 import java.util.Properties;
 
-import org.junit.*;
 
-
-import pageobject.feature5Page;
 import org.apache.commons.lang.RandomStringUtils;
 //<IMPORTS>
 
@@ -117,11 +112,6 @@ driver.get(param21);//<CODE>
 public void method9(String param31, String param32) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//text1
 myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param31, param32);//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" button$")
-public void method10(String param41) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//<CODE>
 }
 
  //<METHOD>
