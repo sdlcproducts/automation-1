@@ -21,7 +21,7 @@ import org.openqa.selenium.WebDriver;
 @CucumberOptions(
 		features = {"src/test/features"},
 		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
-		tags={"@Hi"},
+		tags={"@Test"},
 		glue={"glue"}
 )
 

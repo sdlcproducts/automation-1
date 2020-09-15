@@ -495,7 +495,7 @@ public class AADriver {
   }
 
   /**
-   * rightClick Function   -- Example: And I right click on object identified by "text" "Booking Party DB Entity" then I select item identified by "text" "Create Attribute..."
+   * rightClick Function   -- Example: And I right click on object identified by "text" "State Drop Down" then I select item identified by "text" "Arizona"
    * @param Identifier1 Name of the first identifier to be used eg: class, id, etc
    * @param Value1 Value of the first identifier
    * @param Identifier2 Name of the second identifier to be used eg: class, id, etc
@@ -553,7 +553,7 @@ public class AADriver {
     }
   }
 
-  //And I right click on object identified by "class" "r-c3" and "text" "Booking Party DB Entity" then I move to item identified by "class" "menu-item" and "text" "Drill" then I select submenu identified by "class" "menu-item" and "text" "DBP Template"
+
   /**
    * @param objIdentifier1 Name of the first object identifier to be used eg: class, id, etc
    * @param objValue1 Value of the first object identifier
