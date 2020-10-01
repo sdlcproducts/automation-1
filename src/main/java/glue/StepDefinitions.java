@@ -114,6 +114,18 @@ public void method9(String param31, String param32) throws Throwable {
 myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param31, param32);//<CODE>
 }
 
+ @Given("^I see \"([^\"]*)\" element on \"([^\"]*)\" page$")
+public void method10(String param11, String param12) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//<CODE>
+}
+
+ @Then("^I click \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method11(String param21, String param22) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param21, param22);//<CODE>
+}
+
  //<METHOD>
 
 
