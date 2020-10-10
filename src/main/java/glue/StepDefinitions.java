@@ -20,6 +20,7 @@ import java.util.Properties;
 
 
 import org.apache.commons.lang.RandomStringUtils;
+import pageobject.feature1Page;
 //<IMPORTS>
 
 public class StepDefinitions {
