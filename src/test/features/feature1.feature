@@ -1,6 +1,9 @@
-@GoogleTests
- Feature: Search on Google
+@Test
+ Feature: Google
  Background:
- Given I navigate to "https://www.google.com"
- Scenario: Click Sign in Link
- When user clicks "SigninLink" link on "feature1" page
+ Given user navigates to "https://www.google.com"
+ Scenario: type stuff in
+ When user sees "SearchBarText" element on "feature1" page
+ Then user types "Hello" into "SearchBarText" textbox on "feature1" page
+ Then user clicks on "defaultButton" button in "feature1" page
+ When user sees "SearchBarText" element on "feature1" page
