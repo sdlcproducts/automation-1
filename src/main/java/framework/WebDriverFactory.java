@@ -5,6 +5,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import framework.Settings;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -32,8 +33,10 @@ public class WebDriverFactory {
 		properties = Settings.getProperties();
 		String driverDir = properties.getProperty("Browser");
 		if (driverDir.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", FrameworkParameters.getInstance().getRelativePath()+"\\drivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+//			System.setProperty("webdriver.chrome.driver", FrameworkParameters.getInstance().getRelativePath()+"\\drivers\\chromedriver.exe");
+//			driver = new ChromeDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
