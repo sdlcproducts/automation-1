@@ -6,3 +6,5 @@
  When user sees "defaultText" element
  Then user types "Hello" into "defaultText" textbox
  Then user clicks on "defaultButton" button
+ Scenario: {scenario description here}
+ {scenario here}
