@@ -132,6 +132,23 @@ public void method12(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//<CODE>
 }
 
+ @When("^user sees \"([^\"]*)\" element on "feature1" page$")
+public void method13(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//null
+driver.get(param21);//<CODE>
+}
+
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox on "feature1" page$")
+public void method14(String param31, String param32) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text1
+myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param31, param32);//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button on "feature1" page$")
+public void method15(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//<CODE>
+}
+
  //<METHOD>
 
 
