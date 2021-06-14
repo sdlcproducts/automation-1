@@ -127,6 +127,11 @@ public void method11(String param21, String param22) throws Throwable {
 myDriver.clickOnPage(param21, param22);//<CODE>
 }
 
+ @Then("^user clicks on \"([^\"]*)\" button$")
+public void method12(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//<CODE>
+}
+
  //<METHOD>
 
 
