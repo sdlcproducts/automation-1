@@ -8,6 +8,7 @@ import framework.Settings;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverFactory {
 	public static FrameworkParameters parameters = FrameworkParameters.getInstance();
@@ -33,8 +34,11 @@ public class WebDriverFactory {
 		properties = Settings.getProperties();
 		String driverDir = properties.getProperty("Browser");
 		if (driverDir.equalsIgnoreCase("chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless", "disabled-gpu", "no-sandbox");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
+
 //			System.setProperty("webdriver.chrome.driver", FrameworkParameters.getInstance().getRelativePath()+"\\drivers\\chromedriver.exe");
 //			driver = new ChromeDriver();
 		}
