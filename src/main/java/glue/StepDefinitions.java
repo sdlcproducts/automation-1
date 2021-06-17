@@ -70,6 +70,12 @@ driver.get(param11);//<CODE>
 
 
 
+ @When("^user sees \"([^\"]*)\" element on \"([^\"]*)\" page$")
+public void method2(String param21, String param22) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//exists1
+myDriver.verifyObjectPresentOnPage(param21, param22);//<CODE>
+}
+
  //<METHOD>
 
 
