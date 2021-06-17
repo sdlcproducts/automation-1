@@ -35,7 +35,7 @@ public class WebDriverFactory {
 		String driverDir = properties.getProperty("Browser");
 		if (driverDir.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless", "disabled-gpu", "no-sandbox");
+			options.addArguments("headless", "disabled-gpu");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 
