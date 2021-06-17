@@ -21,6 +21,7 @@ import java.util.Properties;
 
 import org.apache.commons.lang.RandomStringUtils;
 import pageobject.feature1Page;
+import pageobject.feature2Page;
 //<IMPORTS>
 
 public class StepDefinitions {
@@ -84,6 +85,12 @@ myDriver.typeOnPage(param31, param32, param33);//<CODE>
 public void method4(String param41, String param42) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//button1
 myDriver.clickOnPage(param41, param42);//<CODE>
+}
+
+ @Then("^user sees \"([^\"]*)\" element on \"([^\"]*)\" page$")
+public void method5(String param31, String param32) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//exists1
+myDriver.verifyObjectPresentOnPage(param31, param32);//<CODE>
 }
 
  //<METHOD>
