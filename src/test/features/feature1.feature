@@ -1,8 +1,6 @@
-@Test
- Feature: Google
+@Nissan
+ Feature: Navigate To Nissan
  Background:
- Given user navigates to "https://www.google.com"
- Scenario: type stuff in
- When user sees "defaultText" element on "feature1" page
- Then user types "Hello" into "defaultText" textbox on "feature1" page
- Then user clicks on "defaultButton" button on "feature1" page
+ Given I navigate to "https://pace:Siy7!nk"bsk8st@en-us-dark-prod.nissanusa.com/ariya/reserve/engage"
+ Scenario: Click Sign in Link
+ When user clicks "SigninLink" link on "feature1" page
