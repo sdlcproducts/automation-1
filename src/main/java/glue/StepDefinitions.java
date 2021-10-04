@@ -94,6 +94,12 @@ public void method5(String param31, String param32) throws Throwable {
 myDriver.verifyObjectPresentOnPage(param31, param32);//<CODE>
 }
 
+ @When("^user enters \"([^\"]*)\" in \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
+public void method6(String param51, String param52, String param53) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param51, param52, param53);//<CODE>
+}
+
  //<METHOD>
 
 
