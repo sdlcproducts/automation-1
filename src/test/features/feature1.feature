@@ -7,4 +7,4 @@
  When user types "Hello" into "defaultText" textbox on "feature1" page
  When user clicks on "defaultButton" button on "feature1" page
  Scenario: Login
- When user enters "myusername" in "defaultText" textbox
+ When user enters "myusername" in "defaultText" textbox in "feature1" page
