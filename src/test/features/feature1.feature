@@ -9,5 +9,3 @@
  Scenario: Test Login Page
  Scenario: Login
  When user enters "myusername" in "defaultText" textbox in "feature1" page
- Scenario: {scenario description here}
- {scenario here}
