@@ -1,4 +1,4 @@
-@{Your tag here}
+@FB
  Feature: User logs in
  Background:
  Given user navigates to "https://www.facebook.com"
