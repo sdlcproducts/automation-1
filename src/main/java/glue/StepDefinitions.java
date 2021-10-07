@@ -88,11 +88,6 @@ public void method4(String param41, String param42) throws Throwable {
 myDriver.clickOnPage(param41, param42);//<CODE>
 }
 
- @Then("^user sees \"([^\"]*)\" element on \"([^\"]*)\" page$")
-public void method5(String param31, String param32) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//exists1
-myDriver.verifyObjectPresentOnPage(param31, param32);//<CODE>
-}
 
  @When("^user enters \"([^\"]*)\" in \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
 public void method6(String param51, String param52, String param53) throws Throwable {
@@ -106,11 +101,6 @@ public void method7(String param51, String param52) throws Throwable {
 myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param51, param52);//<CODE>
 }
 
- @When("^user enter \"([^\"]*)\" in \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
-public void method8(String param21, String param22, String param23) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//text2
-myDriver.typeOnPage(param21, param22, param23);//<CODE>
-}
 
  //<METHOD>
 
