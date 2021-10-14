@@ -3,4 +3,6 @@
  Background:
  Given user navigates to "https://www.facebook.com"
  Scenario: Login
- When user enter "myusername" in "defaultText" textbox in "feature6" page
+ When user enter "myusername" in "username" textbox and "mypwd" in "text63" textbox in "feature6" page
+ And click the "button70" button
+ Then user should navigate to home page
