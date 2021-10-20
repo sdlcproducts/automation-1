@@ -5,4 +5,4 @@
  Scenario: Login
  When user enter "myusername" in "username" textbox and "mypwd" in "password" textbox in "feature6" page
  And click the "button70" button
- Then user should navigate to home page33
+ Then user should navigate to home page44
