@@ -1,4 +1,4 @@
-@FB
+@FBtest1
  Feature: User logs in
  Background:
  Given user navigates to "https://www.facebook.com"
