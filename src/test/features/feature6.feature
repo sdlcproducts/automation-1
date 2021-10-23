@@ -6,4 +6,4 @@
  When user enter "myusername" in "text61" textbox 
  And "mypwd" in "text71" textbox in "feature6" page
  And click the "button80" button
- Then user should navigate to home page66
+ Then user should navigate to home page
