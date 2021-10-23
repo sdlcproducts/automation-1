@@ -99,7 +99,7 @@ feature6Page.clickButton(param41);
 //<CODE>
 }
 
- @Then("^user should navigate to home page$")
+ @Then("^user should navigate to home page99$")
 public void method5() throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //<CODE>
