@@ -23,6 +23,7 @@ import java.util.Properties;
 import org.junit.*;
 
 
+import org.apache.commons.lang.RandomStringUtils;
 import pageobject.feature6Page;
 
 //<IMPORTS>
@@ -73,24 +74,33 @@ driver.get(param11);
 //<CODE>
 }
 
- @When("^user enter \"([^\"]*)\" in \"([^\"]*)\" textbox and \"([^\"]*)\" in \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
-public void method2(String param21, String param22, String param23, String param24, String param25) throws Throwable {
+ @When("^user enter \"([^\"]*)\" in \"([^\"]*)\" textbox$")
+public void method2(String param21, String param22) throws Throwable {
+// Write code here that turns the phrase above into concrete actions
+//text2
+feature6Page feature6Page = new feature6Page(driver);
+feature6Page.writeText(param21, param22);
+//<CODE>
+}
+
+ @And("^\"([^\"]*)\" in \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
+public void method3(String param31, String param32, String param33) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 
 //<CODE>
 }
 
  @And("^click the \"([^\"]*)\" button$")
-public void method3(String param31) throws Throwable {
+public void method4(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //button1
 feature6Page feature6Page = new feature6Page(driver);
-feature6Page.clickButton(param31);
+feature6Page.clickButton(param41);
 //<CODE>
 }
 
- @Then("^user should navigate to home page$")
-public void method4() throws Throwable {
+ @Then("^user should navigate to home page66$")
+public void method5() throws Throwable {
 // Write code here that turns the phrase above into concrete actions
 //<CODE>
 }
