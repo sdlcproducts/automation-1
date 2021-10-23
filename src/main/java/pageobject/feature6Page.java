@@ -25,9 +25,9 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By text61 = By.xpath("(//input[contains(@class,'inputtext _55r1 _6luy')])[1]");
 
-public static By text71 = By.xpath("(//input[contains(@class,'inputtext _55r1 _6luy _9npi')])[1]");
+public static By text63 = By.xpath("(//input[contains(@class,'inputtext _55r1 _6luy _9npi')])[1]");
 
-public static By button80 = By.xpath("//button");
+public static By button70 = By.xpath("//button");
 
 //<XPATHS>
 
