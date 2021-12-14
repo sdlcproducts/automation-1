@@ -27,6 +27,12 @@ public static By PasswordText = By.xpath("(//input[contains(@class,'input__input
 
 public static By SignInButtonButton = By.xpath("(//button[contains(.,'Sign in')])[1]");
 
+public static By SearchButton = By.xpath("//button[@class='search-global-typeahead__collapsed-search-button']");
+
+public static By SearchTextboxText = By.xpath("//input[@class='search-global-typeahead__input always-show-placeholder']");
+
+public static By QAEngineerText = By.xpath("//div[@id='basic-result-97r8pb']");
+
 //<XPATHS>
 
 /*Page Constructor*/
