@@ -31,7 +31,7 @@ public static By SearchButton = By.xpath("//button[@class='search-global-typeahe
 
 public static By SearchTextboxText = By.xpath("//input[@class='search-global-typeahead__input always-show-placeholder']");
 
-public static By QAEngineerText = By.xpath("//div[@id='basic-result-97r8pb']");
+public static By QAEngineerText = By.xpath("(//span[@class='search-global-typeahead__hit-info truncate'])[2]");
 
 //<XPATHS>
 
