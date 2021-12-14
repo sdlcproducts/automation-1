@@ -21,9 +21,9 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By defaultText = By.xpath("(//input[contains(@class,'input__input')])[1]");
+public static By UsernameText = By.xpath("(//input[contains(@class,'input__input')])[1]");
 
-public static By defaultText = By.xpath("(//input[contains(@class,'input__input')])[2]");
+public static By PasswordText = By.xpath("(//input[contains(@class,'input__input')])[2]");
 
 public static By SignInButtonButton = By.xpath("(//button[contains(.,'Sign in')])[1]");
 
