@@ -33,6 +33,8 @@ public static By SearchTextboxText = By.xpath("//input[@class='search-global-typ
 
 public static By QAEngineerText = By.xpath("(//span[@class='search-global-typeahead__hit-info truncate'])[2]");
 
+public static By SeeAllPeopleButton = By.xpath("//a[.='See all people results']");
+
 //<XPATHS>
 
 /*Page Constructor*/
