@@ -9,3 +9,4 @@
  Then user clicks on "SearchButton" button on "feature5" page
  Then user enters "qa_engineer" on "SearchTextboxText" textbox on "feature5" page
  Then user clicks "QAEngineerText" button on "feature5" page
+ Then user clicks "SeeAllPeopleButton" button on "feature5" page
