@@ -116,6 +116,30 @@ myDriver.clickOnPage(param41, param42);//<CODE>
 }
 
 
+ @And("^user enters \"([^\"]*)\" in \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method9(String param31, String param32, String param33) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param31, param32, param33);//<CODE>
+}
+
+ @And("^user clicks on \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method10(String param51, String param52) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param51, param52);//<CODE>
+}
+
+ @And("^user enters \"([^\"]*)\" on \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method11(String param61, String param62, String param63) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param61, param62, param63);//<CODE>
+}
+
+ @And("^user clicks \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method12(String param71, String param72) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param71, param72);//<CODE>
+}
+
  //<METHOD>
 
 
