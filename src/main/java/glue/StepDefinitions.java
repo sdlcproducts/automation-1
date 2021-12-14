@@ -115,6 +115,12 @@ public void method8(String param41, String param42) throws Throwable {
 myDriver.clickOnPage(param41, param42);//<CODE>
 }
 
+ @And("^user enters \"([^\"]*)\" in \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method9(String param31, String param32, String param33) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param31, param32, param33);//<CODE>
+}
+
  //<METHOD>
 
 
