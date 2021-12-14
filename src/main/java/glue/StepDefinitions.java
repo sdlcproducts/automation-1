@@ -103,6 +103,18 @@ myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param51, param52);
 
 
 
+ @When("^user enters \"([^\"]*)\" in \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method7(String param21, String param22, String param23) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param21, param22, param23);//<CODE>
+}
+
+ @Then("^user clicks \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method8(String param41, String param42) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param41, param42);//<CODE>
+}
+
  //<METHOD>
 
 
