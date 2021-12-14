@@ -140,6 +140,24 @@ public void method12(String param71, String param72) throws Throwable {
 myDriver.clickOnPage(param71, param72);//<CODE>
 }
 
+ @Then("^user enters \"([^\"]*)\" in \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method13(String param31, String param32, String param33) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param31, param32, param33);//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method14(String param51, String param52) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param51, param52);//<CODE>
+}
+
+ @Then("^user enters \"([^\"]*)\" on \"([^\"]*)\" textbox on \"([^\"]*)\" page$")
+public void method15(String param61, String param62, String param63) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param61, param62, param63);//<CODE>
+}
+
  //<METHOD>
 
 
