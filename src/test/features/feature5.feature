@@ -1,4 +1,4 @@
-@Linkedin
+@LinkedIn
  Feature: Lead Generation
  Background:
  Given user navigates to "https://www.linkedin.com"
