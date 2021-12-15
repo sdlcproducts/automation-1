@@ -164,22 +164,6 @@ public void method16(String param21, String param22) throws Throwable {
 myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param21, param22);//<CODE>
 }
 
- @And("^\"([^\"]*)\" in \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
-public void method17(String param31, String param32, String param33) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//<CODE>
-}
-
- @And("^click the \"([^\"]*)\" button$")
-public void method18(String param41) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//<CODE>
-}
-
- @Then("^user should navigate to home page$")
-public void method19() throws Throwable {
-// Write code here that turns the phrase above into concrete actions
-//<CODE>
-}
-
  //<METHOD>
 
 
