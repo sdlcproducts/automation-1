@@ -164,6 +164,12 @@ public void method16(String param21, String param22) throws Throwable {
 myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param21, param22);//<CODE>
 }
 
+ @When("^user enters \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
+public void method17(String param21, String param22, String param23) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param21, param22, param23);//<CODE>
+}
+
  //<METHOD>
 
 
