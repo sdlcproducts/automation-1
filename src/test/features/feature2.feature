@@ -1,8 +1,6 @@
-@MySite
- Feature: Automate My Site
+@Google
+ Feature: Google Search Page
  Background:
- Given user navigates to "http://www.sdlc.co/contact-us"
- Scenario: Fill out contact us form
- When user sees "NameText" element on "feature2" page
- Then user sees "EmailText" element on "feature2" page
- When user sees "MessageText" element on "feature2" page
+ Given user navigates to "https://www.google.com"
+ Scenario: Type into google search
+ When user types "Allegisgroup" into "defaultText" textbox in "feature2" page
