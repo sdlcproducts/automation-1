@@ -7,9 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 import framework.AADriver;
 
-import java.lang.reflect.Field;
-import org.openqa.selenium.WebElement;
-import static org.junit.Assert.assertEquals;
 //<IMPORTS>
 
 public class feature1Page {
@@ -24,7 +21,7 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By defaultText = By.xpath("(//input[contains(@class,'gLFyf gsfi')])[1]");
 
-public static By defaultButton = By.xpath("(//input[contains(@class,'gNO89b')])[2]");
+public static By SearchButton = By.xpath("(//input[contains(@class,'gNO89b')])[2]");
 
 //<XPATHS>
 
