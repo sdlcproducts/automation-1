@@ -82,6 +82,23 @@ public void method3(String param21, String param22, String param23) throws Throw
 myDriver.typeOnPage(param21, param22, param23);//<CODE>
 }
 
+ @When("^user sees \"([^\"]*)\" element$")
+public void method4(String param21) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//null
+driver.get(param21);//<CODE>
+}
+
+ @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
+public void method5(String param31, String param32) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text1
+myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param31, param32);//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button$")
+public void method6(String param41) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//<CODE>
+}
+
  //<METHOD>
 
 
