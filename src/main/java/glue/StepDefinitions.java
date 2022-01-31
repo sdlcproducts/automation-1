@@ -70,53 +70,6 @@ public void method1(String param11) throws Throwable {
 driver.get(param11);//<CODE>
 }
 
- @When("^user enters \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
-public void method17(String param21, String param22, String param23) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//text2
-myDriver.typeOnPage(param21, param22, param23);//<CODE>
-}
-
- @When("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
-public void method3(String param21, String param22, String param23) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//text2
-myDriver.typeOnPage(param21, param22, param23);//<CODE>
-}
-
- @When("^user sees \"([^\"]*)\" element$")
-public void method4(String param21) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//null
-driver.get(param21);//<CODE>
-}
-
- @Then("^user types \"([^\"]*)\" into \"([^\"]*)\" textbox$")
-public void method5(String param31, String param32) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//text1
-myDriver.typeOnPage(RandomStringUtils.randomAlphanumeric(20), param31, param32);//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" button$")
-public void method6(String param41) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//<CODE>
-}
-
- @Then("^user enters \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
-public void method7(String param21, String param22, String param23) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//text2
-myDriver.typeOnPage(param21, param22, param23);//<CODE>
-}
-
- @Then("^user clicks on \"([^\"]*)\" button on \"([^\"]*)\" page$")
-public void method8(String param41, String param42) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//button1
-myDriver.clickOnPage(param41, param42);//<CODE>
-}
-
- @Then("^user navigates to \"([^\"]*)\"$")
-public void method9(String param51) throws Throwable {
-// Write code here that turns the phrase above into concrete actions//navigation2
-driver.get(param51);//<CODE>
-}
-
  //<METHOD>
 
 
