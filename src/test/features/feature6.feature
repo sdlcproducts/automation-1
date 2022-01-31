@@ -1,9 +1,8 @@
-@FB
- Feature: User logs in
- Background:
- Given user navigates to "https://www.facebook.com"
- Scenario: Login
- When user enter "myusername" in "defaultText" textbox
- And "mypwd" in "defaultText" textbox in "feature6" page
- And click the "LoginButton" button
- Then user should navigate to home page
+@UI
+ Feature: Upload Invoice
+ Scenario: Upload Invoice for Mehraj
+ Given user navigates to "https://hr2.artech.com/psp/ps_hr/?cmd=login&languageCd=ENG&"
+ Then user enters "126610" into "defaultText" textbox in "feature6" page
+ And user enters "defaultText" into "Password" textbox in "feature6" page
+ Then user clicks on "defaultButton" button on "feature6" page
+ Then user navigates to "https://hr2.artech.com/psp/ps_hr/?cmd=login&languageCd=ENG&"
