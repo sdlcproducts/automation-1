@@ -99,6 +99,24 @@ public void method6(String param41) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//<CODE>
 }
 
+ @Then("^user enters \"([^\"]*)\" into \"([^\"]*)\" textbox in \"([^\"]*)\" page$")
+public void method7(String param21, String param22, String param23) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//text2
+myDriver.typeOnPage(param21, param22, param23);//<CODE>
+}
+
+ @Then("^user clicks on \"([^\"]*)\" button on \"([^\"]*)\" page$")
+public void method8(String param41, String param42) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//button1
+myDriver.clickOnPage(param41, param42);//<CODE>
+}
+
+ @Then("^user navigates to \"([^\"]*)\"$")
+public void method9(String param51) throws Throwable {
+// Write code here that turns the phrase above into concrete actions//navigation2
+driver.get(param51);//<CODE>
+}
+
  //<METHOD>
 
 
