@@ -23,6 +23,8 @@ public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]"
 public static By searchBox = By.xpath("//input[@title='Search']");
 public static By ClaimRewardsButton = By.xpath("//span[.='Claim Rewards']/..");
 
+public static By ConfirmButton = By.xpath("//button[.='Confirm']");
+
 //<XPATHS>
 
 /*Page Constructor*/
