@@ -35,6 +35,8 @@ public static By ConnectWalletButton = By.xpath("//button[.='Connect Wallet']");
 
 public static By ConnectToMetamaskButton = By.xpath("//div[.='Connect to your MetaMask Wallet']");
 
+public static By NextButton = By.xpath("//button[.='Next']");
+
 public static By HydrateButton = By.xpath("//button[contains(.,'HYDRATE')]");
 
 //<XPATHS>
