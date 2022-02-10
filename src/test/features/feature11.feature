@@ -9,4 +9,5 @@
  And user clicks "ChainButton" button on "feature11" page
  And user clicks "EthMainetButton" button on "feature11" page
  And user clicks "BinanceSmartChainButton" button on "feature11" page
+ And user clicks "BSC" button on "feature11" page
  Given user navigates to "https://drip.community/faucet"
