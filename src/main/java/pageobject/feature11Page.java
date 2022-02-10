@@ -25,6 +25,8 @@ public static By ClaimRewardsButton = By.xpath("//span[.='Claim Rewards']/..");
 
 public static By ConfirmButton = By.xpath("//button[.='Confirm']");
 
+public static By ChainButton = By.xpath("//i[@class='network-display__icon app-header__network-down-arrow']");
+
 //<XPATHS>
 
 /*Page Constructor*/
