@@ -787,6 +787,7 @@ public class AADriver {
       Class<?> clazz = Class.forName("pageobject."+pageName);
       Object obj = clazz.getDeclaredConstructor().newInstance();
       Field field = obj.getClass().getField(ObjectName);
+      driver.findElement((By) field.get(obj)).clear();
       driver.findElement((By) field.get(obj)).sendKeys(text);
       field=null;
       obj=null;
@@ -846,6 +847,24 @@ public class AADriver {
     }catch(Exception e){
       System.out.println("ERROR: doubleClickOnPage("+ObjectName+","+pageName+")");
       throw new Exception("ERROR: doubleClickOnPage("+ObjectName+","+pageName+")" + e);
+    }
+  }
+  public void switchToIframe(String ObjectName, String pageName) throws Exception {
+    pageName = pageName + "Page";
+    Actions act = new Actions(driver);
+    try{
+      Class<?> clazz = Class.forName("pageobject."+pageName);
+      Object obj = clazz.getDeclaredConstructor().newInstance();
+      Field field = obj.getClass().getField(ObjectName);
+//	            System.out.println(field.get(obj));
+      object = (WebElement) wait.until(ExpectedConditions.visibilityOfElementLocated((By)field.get(obj)));
+      driver.switchTo().frame(object);
+      field=null;
+      obj=null;
+      act=null;
+    }catch(Exception e){
+      System.out.println("ERROR: switchToIframe("+ObjectName+","+pageName+")");
+      throw new Exception("ERROR: switchToIframe("+ObjectName+","+pageName+")" + e);
     }
   }
 

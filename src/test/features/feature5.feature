@@ -7,6 +7,7 @@
  Then user enters "pimpson1" in "PasswordText" textbox on "feature5" page
  Then user clicks "SignInButtonButton" button on "feature5" page
  Then user clicks on "SearchButton" button on "feature5" page
- Then user enters "qa_engineer" on "SearchTextboxText" textbox on "feature5" page
+ Then user enters "qa engineer" on "SearchTextboxText" textbox on "feature5" page
  Then user clicks "QAEngineerText" button on "feature5" page
  Then user clicks "SeeAllPeopleButton" button on "feature5" page
+  Then jobTitle "ceo"

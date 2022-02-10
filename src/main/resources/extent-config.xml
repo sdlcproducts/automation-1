@@ -4,7 +4,7 @@
 		<encoding>UTF-8</encoding>
 		<documentTitle>Vadr Automation Reports</documentTitle>
 		<reportName>Test Runs</reportName>
-		<reportHeadline>Execution Report</reportHeadline>
+		<reportHeadline> Automation Execution Report</reportHeadline>
 		<theme>dark</theme>
 	</configuration>
 </extentreports>

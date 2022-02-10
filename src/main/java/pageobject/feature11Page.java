@@ -21,7 +21,7 @@ public static Properties properties;
 /*Xpaths*/
 public static By btnSubmit = By.xpath("(//input[contains(@value, 'Google')])[2]");
 public static By searchBox = By.xpath("//input[@title='Search']");
-public static By ThorAvaxMaxButton = By.xpath("(//button[@class='ant-btn ant-btn-link'])[1]");
+public static By ThorAvaxMaxButton = By.xpath("(//button[@class='ant-btn ant-btn-link'])[1]//span");
 
 //<XPATHS>
 

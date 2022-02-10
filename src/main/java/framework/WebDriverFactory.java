@@ -35,7 +35,11 @@ public class WebDriverFactory {
 		String driverDir = properties.getProperty("Browser");
 		if (driverDir.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless", "disabled-gpu");
+//			options.addArguments("headless", "disabled-gpu");
+//			options.addArguments("user-data-dir=C:\\Users\\VADR\\AppData\\Local\\Google\\Chrome\\User Data\\Default");
+			options.setExperimentalOption("debuggerAddress","localhost:6093");
+//			options.addArguments("debuggerAddress","http://127.0.0.1:9222");
+//			options.addArguments("--start-maximized");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
 

@@ -21,7 +21,7 @@ import org.openqa.selenium.WebDriver;
 @CucumberOptions(
 		features = {"src/test/features"},
 		plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"},
-		tags={"@LinkedIn"},
+		tags={"@Thor"},
 		glue={"glue"}
 )
 
@@ -45,10 +45,10 @@ public class RunTest {
 	@AfterClass
 	public static void close(){
 		try {
-			AADriver driver = new AADriver(driverFactory.getDriver());
-			WebDriver webDriver = driverFactory.getDriver();
-			webDriver.close();
-			webDriver.quit();
+//			AADriver driver = new AADriver(driverFactory.getDriver());
+//			WebDriver webDriver = driverFactory.getDriver();
+//			webDriver.close();
+//			webDriver.quit();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
