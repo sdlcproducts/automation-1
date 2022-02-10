@@ -1,6 +1,6 @@
 @Thor
  Feature: Thor Fi
- Background:
+ Background: Navigation
  Given user navigates to "https://app.thor.financial/farm"
  Scenario: Claim Thor
  When user clicks "ClaimRewardsButton" button on "feature11" page
