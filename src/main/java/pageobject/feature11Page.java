@@ -27,7 +27,9 @@ public static By ConfirmButton = By.xpath("//button[.='Confirm']");
 
 public static By ChainButton = By.xpath("//i[@class='network-display__icon app-header__network-down-arrow']");
 
-public static By EthMainetButton = By.xpath("//span[.='Ethereum Mainnet']");
+public static By EthMainetButton = By.xpath("(//span[.='Ethereum Mainnet'])[last()]");
+
+public static By BinanceSmartChainButton = By.xpath("(//span[.='Binance Smart Chain'])[last()]");
 
 //<XPATHS>
 
