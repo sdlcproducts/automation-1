@@ -121,7 +121,8 @@ myDriver.typeOnPage(param21, param22, param23);//<CODE>
  @When("^user clicks \"([^\"]*)\" button on \"([^\"]*)\" page$")
  public void method1(String param21, String param22) throws Throwable {
 // Write code here that turns the phrase above into concrete actions//button1
-  myDriver.clickOnPage(param21, param22);//<CODE>
+  myDriver.clickOnPage(param21, param22);//button1
+myDriver.clickOnPage(param21, param22);//<CODE>
  }
 
 
