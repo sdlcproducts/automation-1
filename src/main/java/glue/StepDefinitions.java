@@ -265,7 +265,9 @@ public void method7(String param131) throws Throwable {
 Thread.sleep(param131*1000);//waits1
 Thread.sleep(param131*1000*1000);//waits1
 Thread.sleep(param131*1000*1000*1000);//waits1
-Thread.sleep(param131*1000*1000*1000*1000);//<CODE>
+Thread.sleep(param131*1000*1000*1000*1000);//waits1
+Thread.sleep(param131*1000*1000*1000*1000*1000);//waits1
+Thread.sleep(param131*1000*1000*1000*1000*1000*1000);//<CODE>
 }
 
  //<METHOD>
